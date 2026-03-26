@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Confirme sua Presença | Profluxus Conexão · 27 de Março</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="icon" href="img/icone.jpg" type="image/jpeg">
+
+
+    <!-- ===== OPEN GRAPH / SEO ===== -->
+<meta name="description" content="Aprenda como o cérebro humano decide comprar — e multiplique seus resultados com neurociência, tecnologia e automação. Evento gratuito, 27 de março.">
+<!-- Open Graph (WhatsApp, Facebook, LinkedIn) -->
+<meta property="og:type"        content="website">
+<meta property="og:url"         content="https://lp.profluxus.com/evento/conexao">
+<meta property="og:title"       content="Profluxus Conexão | Evento Online Gratuito · 27 de Março - 19h">
+<meta property="og:description" content="Aprenda como o cérebro humano decide comprar — e multiplique seus resultados com neurociência, tecnologia e automação. Evento gratuito, 27 de Março - 19h.">
+<meta property="og:image"       content="og-image.jpeg">
+<meta property="og:image:width"  content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale"      content="pt_BR">
+<meta property="og:site_name"   content="Profluxus Conexão">
+<!-- Twitter Card -->
+<meta name="twitter:card"        content="summary_large_image">
+<meta name="twitter:title"       content="Profluxus Conexão | Evento Online Gratuito · 27 de Março - 19h">
+<meta name="twitter:description" content="Aprenda como o cérebro humano decide comprar — e multiplique seus resultados com neurociência, tecnologia e automação.">
+<meta name="twitter:image"       content="img/og-image.jpeg">
+
+<style>
+  @font-face {
+    font-family: 'Posterama';
+    src: url('./posterama-regular.otf') format('opentype');
+    font-weight: normal; font-style: normal; font-display: swap;
+  }
+
+  :root {
+    --deep:       #05080f;
+    --navy:       #080e1e;
+    --ink:        #0c1428;
+    --gold:       #e8a834;
+    --gold-light: #f5c96a;
+    --gold-dim:   rgba(232,168,52,0.15);
+    --gold-glow:  rgba(232,168,52,0.35);
+    --teal:       #00c6a2;
+    --teal-dim:   rgba(0,198,162,0.12);
+    --white:      #f8f5ef;
+    --muted:      rgba(248,245,239,0.55);
+    --text:       rgba(248,245,239,0.88);
+    --border:     rgba(232,168,52,0.22);
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--deep);
+    color: var(--text);
+    font-family: 'Posterama', 'DM Sans', sans-serif;
+    overflow-x: hidden;
+    line-height: 1.6;
+  }
+
+  body::before {
+    content: '';
+    position: fixed; inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+    pointer-events: none; z-index: 0; opacity: 0.5;
+  }
+
+  /* ===== NAV ===== */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 18px 40px;
+    background: rgba(5,8,15,0.85);
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid var(--border);
+  }
+  .nav-logo { font-family: 'Posterama', 'Space Mono', monospace; font-size: 16px; font-weight: 700; color: var(--gold); letter-spacing: 0.08em; text-decoration: none; }
+  .nav-date  { font-family: 'Space Mono', monospace; font-size: 12px; color: var(--muted); letter-spacing: 0.1em; }
+  @media (max-width: 600px) { .nav-date { display: none; } nav { padding: 16px 20px; } }
+
+  /* ===== HERO ===== */
+  .hero {
+    min-height: 100vh;
+    display: flex; align-items: center; justify-content: center;
+    position: relative; padding: 120px 40px 80px; overflow: hidden;
+  }
+  .hero-bg {
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(ellipse 80% 60% at 50% 0%, rgba(232,168,52,0.14) 0%, transparent 60%),
+      radial-gradient(ellipse 50% 40% at 80% 80%, rgba(0,198,162,0.08) 0%, transparent 50%);
+  }
+  .hero-grid {
+    position: absolute; inset: 0;
+    background-image: linear-gradient(rgba(232,168,52,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(232,168,52,0.04) 1px, transparent 1px);
+    background-size: 60px 60px;
+    mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 30%, transparent 80%);
+  }
+  .hero-content { max-width: 860px; text-align: center; position: relative; z-index: 2; }
+
+  .event-badge {
+    display: inline-flex; align-items: center; gap: 10px;
+    background: var(--gold-dim); border: 1px solid var(--border);
+    padding: 8px 20px; border-radius: 100px;
+    font-family: 'Space Mono', monospace; font-size: 11px;
+    color: var(--gold); letter-spacing: 0.15em; text-transform: uppercase;
+    margin-bottom: 32px; animation: fadeDown 0.7s ease both;
+  }
+  .badge-dot { width: 6px; height: 6px; background: var(--gold); border-radius: 50%; animation: pulse 2s ease infinite; }
+
+  @keyframes pulse    { 0%,100%{opacity:1;transform:scale(1);}50%{opacity:0.5;transform:scale(0.7);} }
+  @keyframes fadeDown { from{opacity:0;transform:translateY(-20px);}to{opacity:1;transform:translateY(0);} }
+  @keyframes fadeUp   { from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);} }
+  @keyframes bounceIn { from{opacity:0;transform:scale(0.5);}to{opacity:1;transform:scale(1);} }
+  @keyframes shimmer  { 0%{background-position:0% 0;}100%{background-position:200% 0;} }
+
+  .hero-eyebrow { font-family:'Posterama',monospace; font-size:14px; color:var(--teal); letter-spacing:0.15em; margin-bottom:16px; animation:fadeDown 0.7s 0.1s ease both; }
+  .hero-title   { font-family:'Playfair Display',serif; font-size:clamp(38px,6vw,76px); font-weight:900; line-height:1.0; color:var(--white); margin-bottom:8px; animation:fadeDown 0.7s 0.2s ease both; }
+  .hero-title .highlight { color:var(--gold); font-style:italic; }
+  .hero-sub     { font-family:'Posterama',serif; font-size:clamp(18px,2.5vw,28px); font-weight:400; color:var(--muted); margin-bottom:24px; animation:fadeDown 0.7s 0.3s ease both; }
+  .hero-tagline { font-size:17px; color:var(--text); max-width:580px; margin:0 auto 48px; font-weight:300; animation:fadeDown 0.7s 0.4s ease both; }
+  .hero-tagline strong { font-weight:700; color:var(--white); }
+
+  /* ===== SECTIONS ===== */
+  .section-divider { width:100%; height:1px; background:linear-gradient(90deg,transparent,var(--gold),transparent); opacity:0.3; }
+  .section-inner   { max-width:1100px; margin:0 auto; padding:0 40px; }
+  .section-label   { font-family:'Posterama','Space Mono',monospace; font-size:12px; color:var(--teal); letter-spacing:0.2em; text-transform:uppercase; margin-bottom:16px; display:flex; align-items:center; gap:12px; }
+  .section-label::before { content:''; width:32px; height:1px; background:var(--teal); }
+  .section-title { font-family:'Playfair Display',serif; font-size:clamp(28px,4vw,46px); font-weight:700; color:var(--white); line-height:1.15; margin-bottom:12px; }
+  .section-title em { color:var(--gold); font-style:italic; }
+  .section-desc  { font-size:16px; color:var(--muted); font-weight:300; margin-bottom:56px; max-width:600px; }
+
+  /* ===== SORTEIOS ===== */
+  .prizes-section { padding:100px 0; background:var(--navy); position:relative; z-index:1; }
+  .prizes-grid    { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:2px; background:var(--border); border:1px solid var(--border); }
+
+  .prize-card { background:var(--navy); padding:36px 32px; position:relative; overflow:hidden; transition:background 0.3s; }
+  .prize-card:hover { background:rgba(255,255,255,0.03); }
+  .prize-card.destaque { background:var(--gold-dim); }
+  .prize-card.destaque:hover { background:rgba(232,168,52,0.12); }
+  .prize-card::before { content:''; position:absolute; top:0; left:0; right:0; height:2px; background:linear-gradient(90deg,var(--gold),var(--teal)); transform:scaleX(0); transform-origin:left; transition:transform 0.4s; }
+  .prize-card:hover::before, .prize-card.destaque::before { transform:scaleX(1); }
+
+  .prize-number { font-family:'Playfair Display',serif; font-size:52px; font-weight:900; color:var(--gold-dim); line-height:1; position:absolute; top:16px; right:20px; transition:color 0.3s; }
+  .prize-card:hover .prize-number { color:var(--gold-glow); }
+  .prize-card.destaque .prize-number { color:rgba(232,168,52,0.25); }
+  .prize-icon  { font-size:32px; margin-bottom:16px; }
+  .prize-title { font-family:'Posterama',serif; font-size:18px; font-weight:700; color:var(--white); margin-bottom:10px; }
+  .prize-text  { font-size:14px; color:var(--muted); line-height:1.65; }
+  .prize-card.destaque .prize-text { color:var(--text); }
+  .prize-tag   { display:inline-flex; margin-top:14px; background:var(--gold); color:var(--deep); font-family:'Space Mono',monospace; font-size:9px; font-weight:700; padding:4px 10px; letter-spacing:0.1em; text-transform:uppercase; }
+
+  /* ===== FORM ===== */
+  .form-section { padding:100px 0; background:var(--deep); position:relative; z-index:1; }
+  .form-section::before { content:''; position:absolute; top:0; left:50%; transform:translateX(-50%); width:700px; height:500px; background:radial-gradient(ellipse at center,rgba(232,168,52,0.1) 0%,transparent 70%); pointer-events:none; }
+
+  .form-wrap { max-width:620px; margin:0 auto; background:var(--navy); border:1px solid var(--border); position:relative; overflow:hidden; }
+  .form-wrap::before { content:''; position:absolute; top:0; left:0; right:0; height:3px; background:linear-gradient(90deg,var(--gold),var(--teal),var(--gold)); background-size:200% 100%; animation:shimmer 2.5s linear infinite; }
+
+  .form-header { padding:36px 40px 24px; border-bottom:1px solid var(--border); }
+  .form-header-title { font-family:'Playfair Display',serif; font-size:clamp(22px,3vw,30px); font-weight:900; color:var(--white); margin-bottom:6px; }
+  .form-header-title em { color:var(--gold); font-style:italic; }
+  .form-header-sub { font-size:14px; color:var(--muted); font-weight:300; }
+
+  .form-body { padding:32px 40px 40px; }
+
+  .field-group { display:flex; flex-direction:column; gap:6px; margin-bottom:20px; }
+  .field-label { font-size:11px; font-weight:600; color:var(--muted); letter-spacing:0.08em; text-transform:uppercase; }
+
+  .field-input {
+    width:100%; background:rgba(255,255,255,0.04);
+    border:1px solid var(--border); color:var(--white);
+    font-family:'DM Sans',sans-serif; font-size:15px;
+    padding:13px 16px; outline:none;
+    transition:border-color 0.2s, background 0.2s;
+    caret-color:var(--gold); border-radius:0; -webkit-appearance:none;
+  }
+  .field-input:focus { border-color:var(--gold); background:rgba(232,168,52,0.05); }
+  .field-input::placeholder { color:rgba(248,245,239,0.3); }
+
+  .field-select { appearance:none; -webkit-appearance:none; background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23e8a834' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E"); background-repeat:no-repeat; background-position:right 14px center; padding-right:40px; cursor:pointer; }
+  .field-select option { background:var(--navy); color:var(--white); }
+
+  .radio-grid { display:flex; flex-direction:column; gap:8px; }
+  .radio-option { display:flex; align-items:center; gap:14px; background:rgba(255,255,255,0.03); border:1px solid var(--border); padding:13px 16px; cursor:pointer; transition:all 0.2s; user-select:none; }
+  .radio-option:hover  { background:var(--gold-dim); border-color:rgba(232,168,52,0.5); }
+  .radio-option.selected { background:var(--gold-dim); border-color:var(--gold); }
+  .radio-dot { width:18px; height:18px; border-radius:50%; border:2px solid var(--border); flex-shrink:0; position:relative; transition:border-color 0.2s; }
+  .radio-option.selected .radio-dot { border-color:var(--gold); }
+  .radio-option.selected .radio-dot::after { content:''; position:absolute; inset:3px; border-radius:50%; background:var(--gold); }
+  .radio-label { font-size:14px; color:var(--text); flex:1; line-height:1.4; }
+  .radio-option.selected .radio-label { color:var(--white); font-weight:500; }
+  .radio-emoji { font-size:18px; flex-shrink:0; }
+
+  /* Termo */
+  .termo-wrap { background:rgba(255,255,255,0.02); border:1px solid var(--border); padding:20px; margin-bottom:24px; cursor:pointer; transition:border-color 0.2s; }
+  .termo-wrap:hover   { border-color:rgba(232,168,52,0.4); }
+  .termo-wrap.checked { border-color:var(--gold); background:var(--gold-dim); }
+  .termo-header { display:flex; align-items:flex-start; gap:14px; margin-bottom:12px; }
+  .termo-box { width:20px; height:20px; flex-shrink:0; margin-top:2px; border:2px solid var(--border); position:relative; transition:border-color 0.2s; }
+  .termo-wrap.checked .termo-box { border-color:var(--gold); background:var(--gold); }
+  .termo-wrap.checked .termo-box::after { content:'✓'; position:absolute; inset:0; display:flex; align-items:center; justify-content:center; color:var(--deep); font-size:13px; font-weight:700; }
+  .termo-title { font-size:13px; font-weight:700; color:var(--white); line-height:1.4; }
+  .termo-text  { font-size:12px; color:var(--muted); line-height:1.65; max-height:0; overflow:hidden; transition:max-height 0.4s ease; }
+  .termo-wrap.expanded .termo-text { max-height:400px; }
+  .termo-toggle { font-size:11px; color:var(--gold); cursor:pointer; font-family:'Space Mono',monospace; letter-spacing:0.06em; background:none; border:none; padding:0; margin-top:8px; display:block; }
+
+  /* Submit */
+  .submit-btn { width:100%; display:flex; align-items:center; justify-content:center; gap:12px; background:linear-gradient(135deg,var(--gold),#c8820a); color:var(--deep); font-size:16px; font-weight:700; padding:18px 32px; border:none; cursor:pointer; letter-spacing:0.06em; text-transform:uppercase; clip-path:polygon(10px 0%,100% 0%,calc(100% - 10px) 100%,0% 100%); box-shadow:0 0 40px var(--gold-glow); transition:all 0.25s; font-family:'DM Sans',sans-serif; }
+  .submit-btn:hover    { transform:translateY(-3px); box-shadow:0 8px 50px var(--gold-glow); }
+  .submit-btn:disabled { opacity:0.5; cursor:not-allowed; transform:none; }
+  .form-note { margin-top:16px; font-size:12px; color:var(--muted); text-align:center; }
+
+  .field-error { font-size:12px; color:#ff6b6b; margin-top:4px; display:none; }
+  .field-error.show { display:block; }
+
+  /* Sucesso */
+  .success-wrap { padding:60px 40px; text-align:center; display:none; }
+  .success-wrap.show { display:block; }
+  .success-icon  { font-size:64px; margin-bottom:20px; animation:bounceIn 0.6s cubic-bezier(0.34,1.56,0.64,1) both; }
+  .success-title { font-family:'Playfair Display',serif; font-size:28px; font-weight:900; color:var(--white); margin-bottom:12px; }
+  .success-title em { color:var(--gold); font-style:italic; }
+  .success-desc  { font-size:15px; color:var(--muted); line-height:1.7; margin-bottom:32px; font-weight:300; }
+  .success-btn   { display:inline-flex; align-items:center; gap:10px; background:linear-gradient(135deg,#25D366,#128C7E); color:#fff; font-size:15px; font-weight:700; padding:16px 36px; text-decoration:none; letter-spacing:0.04em; text-transform:uppercase; clip-path:polygon(10px 0%,100% 0%,calc(100% - 10px) 100%,0% 100%); box-shadow:0 4px 32px rgba(37,211,102,0.35); transition:all 0.25s; font-family:'DM Sans',sans-serif; }
+  .success-btn:hover { transform:translateY(-3px); box-shadow:0 8px 40px rgba(37,211,102,0.5); }
+
+  /* CTA Bottom */
+  .cta-bottom { padding:80px 40px; text-align:center; background:var(--navy); position:relative; z-index:1; }
+  .cta-bottom-title { font-family:'Playfair Display',serif; font-size:clamp(24px,4vw,40px); font-weight:900; color:var(--white); margin-bottom:12px; }
+  .cta-bottom-title em { color:var(--gold); font-style:italic; }
+  .cta-bottom-sub { font-size:16px; color:var(--muted); margin-bottom:32px; font-weight:300; }
+  .cta-bottom-btn { display:inline-flex; align-items:center; gap:10px; background:linear-gradient(135deg,#25D366,#128C7E); color:#fff; font-size:15px; font-weight:700; padding:16px 40px; text-decoration:none; letter-spacing:0.04em; text-transform:uppercase; clip-path:polygon(10px 0%,100% 0%,calc(100% - 10px) 100%,0% 100%); box-shadow:0 4px 32px rgba(37,211,102,0.35); transition:all 0.25s; font-family:'DM Sans',sans-serif; }
+  .cta-bottom-btn:hover { transform:translateY(-3px); box-shadow:0 8px 40px rgba(37,211,102,0.5); }
+
+  footer { border-top:1px solid var(--border); padding:32px 40px; text-align:center; background:var(--deep); }
+  .footer-logo { font-family:'Posterama',monospace; font-size:15px; font-weight:700; color:var(--gold); letter-spacing:0.12em; margin-bottom:6px; }
+  .footer-sub  { font-size:12px; color:var(--muted); }
+
+  .reveal { opacity:0; transform:translateY(30px); transition:opacity 0.7s ease, transform 0.7s ease; }
+  .reveal.visible { opacity:1; transform:translateY(0); }
+  .reveal-delay-1 { transition-delay:0.1s; }
+  .reveal-delay-2 { transition-delay:0.2s; }
+  .reveal-delay-3 { transition-delay:0.3s; }
+  .reveal-delay-4 { transition-delay:0.4s; }
+
+  @media (max-width:600px) {
+    .hero { padding:100px 20px 60px; }
+    .section-inner { padding:0 20px; }
+    .form-header { padding:28px 24px 20px; }
+    .form-body   { padding:24px 24px 32px; }
+    .prizes-grid { grid-template-columns:1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-logo">Profluxus Conexão</a>
+  <div class="nav-date">27 de março · 19h · Evento Online</div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="event-badge">
+      <span class="badge-dot"></span>
+      Confirmação de Presença · 27 de Março - 19h
+    </div>
+    <div class="hero-eyebrow">Você esteve aqui. Agora confirme.</div>
+    <h1 class="hero-title">Quem confirma,<br><span class="highlight">concorre.</span></h1>
+    <p class="hero-sub">5 sorteios exclusivos para quem estiver na live</p>
+    <p class="hero-tagline">
+      Pra quem estiver na live, preparamos um sorteio especial — dividido por <strong>níveis estratégicos</strong>. Confirme sua presença agora e entre na disputa.
+    </p>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- SORTEIOS -->
+<section class="prizes-section">
+  <div class="section-inner">
+    <div class="section-label reveal">O que você pode ganhar</div>
+    <h2 class="section-title reveal">5 sorteios.<br><em>Todos estratégicos.</em></h2>
+    <p class="section-desc reveal">Cada prêmio foi pensado para transformar um ponto específico da sua operação de vendas.</p>
+
+    <div class="prizes-grid">
+      <div class="prize-card reveal">
+        <span class="prize-number">01</span>
+        <div class="prize-icon">📱</div>
+        <h3 class="prize-title">Análise do Instagram</h3>
+        <p class="prize-text">Uma análise personalizada do seu perfil para mostrar exatamente onde você está travando suas vendas e o que mudar pra desbloquear resultados.</p>
+      </div>
+      <div class="prize-card reveal reveal-delay-1">
+        <span class="prize-number">02</span>
+        <div class="prize-icon">🎯</div>
+        <h3 class="prize-title">Análise de Campanhas de Tráfego</h3>
+        <p class="prize-text">Revisão completa das suas campanhas para parar de desperdiçar dinheiro e escalar o que realmente funciona.</p>
+      </div>
+      <div class="prize-card reveal reveal-delay-2">
+        <span class="prize-number">03</span>
+        <div class="prize-icon">🚀</div>
+        <h3 class="prize-title">1 Mês de Disparo em Massa</h3>
+        <p class="prize-text">Acesso completo ao sistema de disparo estratégico no WhatsApp para gerar mais oportunidades todos os dias — sem risco de banimento.</p>
+      </div>
+      <div class="prize-card reveal reveal-delay-3">
+        <span class="prize-number">04</span>
+        <div class="prize-icon">📊</div>
+        <h3 class="prize-title">Análise de Tráfego + Instagram</h3>
+        <p class="prize-text">Combinação dos dois primeiros prêmios — uma visão completa da sua presença digital e das suas campanhas pagas.</p>
+      </div>
+      <div class="prize-card destaque reveal reveal-delay-4">
+        <span class="prize-number">05</span>
+        <div class="prize-icon">🧠</div>
+        <h3 class="prize-title">Consultoria com Alessandra Virgínia</h3>
+        <p class="prize-text">O prêmio mais poderoso: uma sessão individual com a Terapeuta Comportamental. Você vai aprender a ler o corpo e o rosto do seu lead — entendendo exatamente quais argumentos usar com aquela pessoa antes mesmo de ela falar.</p>
+        <span class="prize-tag">⭐ Prêmio principal</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- FORM -->
+<section class="form-section" id="confirmar">
+  <div class="section-inner">
+    <div style="text-align:center;margin-bottom:48px;">
+      <div class="section-label reveal" style="justify-content:center">Sua confirmação</div>
+      <h2 class="section-title reveal" style="text-align:center">Preencha os dados<br><em>e entre no sorteio.</em></h2>
+      <p class="reveal" style="font-size:15px;color:var(--muted);font-weight:300;max-width:480px;margin:0 auto;">Leva menos de 2 minutos. Todos os confirmados entram automaticamente nos sorteios da live.</p>
+    </div>
+
+    <div class="form-wrap reveal" style="position:relative;z-index:2;">
+      <div class="form-header">
+        <div class="form-header-title">Confirmar Presença <em>&amp; Participar</em></div>
+        <div class="form-header-sub">Evento online · Sexta-feira, 27 de março · 19h</div>
+      </div>
+
+      <div class="form-body" id="formBody">
+
+        <!-- Nome -->
+        <div class="field-group">
+          <label class="field-label">Seu nome completo *</label>
+          <input type="text" class="field-input" id="fieldNome" placeholder="Como quer ser chamado(a)?" autocomplete="given-name">
+          <span class="field-error" id="errNome">Por favor, informe seu nome.</span>
+        </div>
+
+        <!-- WhatsApp -->
+        <div class="field-group">
+          <label class="field-label">WhatsApp *</label>
+          <div style="display:flex;gap:8px;">
+            <select class="field-input field-select" id="fieldPais" style="flex:0 0 160px;">
+              <option value="+55"  selected>🇧🇷 +55</option>
+              <option value="+351">🇵🇹 +351</option>
+              <option value="+1"  >🇺🇸 +1</option>
+              <option value="+44" >🇬🇧 +44</option>
+              <option value="+34" >🇪🇸 +34</option>
+              <option value="+54" >🇦🇷 +54</option>
+            </select>
+            <input type="tel" class="field-input" id="fieldWpp" placeholder="(11) 99999-9999" autocomplete="tel" style="flex:1;">
+          </div>
+          <span class="field-error" id="errWpp">Por favor, informe seu WhatsApp.</span>
+        </div>
+
+        <!-- Tráfego -->
+        <div class="field-group">
+          <label class="field-label">Você faz tráfego pago por conta própria? *</label>
+          <div class="radio-grid" id="radioTrafego">
+            <div class="radio-option" data-value="sim"><div class="radio-dot"></div><span class="radio-emoji">✅</span><span class="radio-label">Sim, gerencio minhas próprias campanhas</span></div>
+            <div class="radio-option" data-value="nao_terceirizo"><div class="radio-dot"></div><span class="radio-emoji">🤝</span><span class="radio-label">Não, terceirizo para outra pessoa</span></div>
+            <div class="radio-option" data-value="nao_nenhum"><div class="radio-dot"></div><span class="radio-emoji">🌱</span><span class="radio-label">Não faço tráfego ainda</span></div>
+          </div>
+          <span class="field-error" id="errTrafego">Selecione uma opção.</span>
+        </div>
+
+        <!-- Banimento -->
+        <div class="field-group">
+          <label class="field-label">Já foi banido ou restrito no WhatsApp? *</label>
+          <div class="radio-grid" id="radioBan">
+            <div class="radio-option" data-value="nunca"><div class="radio-dot"></div><span class="radio-emoji">😎</span><span class="radio-label">Nunca aconteceu</span></div>
+            <div class="radio-option" data-value="sim_uma"><div class="radio-dot"></div><span class="radio-emoji">😅</span><span class="radio-label">Sim, uma vez</span></div>
+            <div class="radio-option" data-value="sim_varias"><div class="radio-dot"></div><span class="radio-emoji">😤</span><span class="radio-label">Sim, várias vezes — tô cansado disso</span></div>
+          </div>
+          <span class="field-error" id="errBan">Selecione uma opção.</span>
+        </div>
+
+        <!-- Presença -->
+        <div class="field-group">
+          <label class="field-label">Estará presente na live sexta, dia 27 às 19h? *</label>
+          <div class="radio-grid" id="radioPresenca">
+            <div class="radio-option" data-value="sim_estarei"><div class="radio-dot"></div><span class="radio-emoji">🔥</span><span class="radio-label">Sim! Estarei presente na live</span></div>
+            <div class="radio-option" data-value="talvez"><div class="radio-dot"></div><span class="radio-emoji">🤔</span><span class="radio-label">Talvez — vou tentar estar</span></div>
+          </div>
+          <span class="field-error" id="errPresenca">Selecione uma opção.</span>
+        </div>
+
+        <!-- Termo -->
+        <div class="field-group">
+          <label class="field-label">Termo de consentimento *</label>
+          <div class="termo-wrap" id="termoWrap">
+            <div class="termo-header">
+              <div class="termo-box" id="termoBox"></div>
+              <span class="termo-title">Li e concordo com os termos de participação e uso de imagem</span>
+            </div>
+            <div class="termo-text" id="termoText">
+              Ao confirmar minha presença e participar dos sorteios do evento Profluxus Conexão (27/03/2026), declaro que:
+              <br><br>
+              <strong style="color:var(--white)">1. Participação nos sorteios:</strong> Estou ciente de que a participação é gratuita e os sorteados serão anunciados durante ou após a live. O resultado é definitivo e não cabe recurso.
+              <br><br>
+              <strong style="color:var(--white)">2. Uso de imagem e voz:</strong> Autorizo o uso da minha imagem, voz e depoimentos captados durante o evento — em vídeo, foto ou áudio — para fins de divulgação, marketing e comunicação do Profluxus e do Grupo 3DS, em qualquer mídia, de forma gratuita e por prazo indeterminado.
+              <br><br>
+              <strong style="color:var(--white)">3. Gravação da live:</strong> Estou ciente de que a live poderá ser gravada e posteriormente divulgada, e que minha participação (câmera, chat ou voz) pode aparecer nas gravações.
+              <br><br>
+              <strong style="color:var(--white)">4. Dados pessoais:</strong> Autorizo o uso dos meus dados (nome e WhatsApp) para comunicações relacionadas ao evento e futuros conteúdos do Profluxus, conforme a LGPD. Posso solicitar a exclusão a qualquer momento pelo WhatsApp.
+              <br><br>
+              <strong style="color:var(--white)">5. Prêmios:</strong> Os prêmios são intransferíveis, sem possibilidade de troca por dinheiro ou outros itens. O prazo para resgate é de 30 dias após o anúncio.
+            </div>
+            <button class="termo-toggle" id="termoToggle" type="button">+ Ver termos completos</button>
+          </div>
+          <span class="field-error" id="errTermo">Você precisa aceitar os termos para participar.</span>
+        </div>
+
+        <!-- Submit -->
+        <button class="submit-btn" id="submitBtn" type="button">
+          🎯 Confirmar presença e participar dos sorteios
+        </button>
+        <p class="form-note">🔒 Seus dados são protegidos · Sem spam</p>
+
+      </div>
+
+      <!-- Sucesso -->
+      <div class="success-wrap" id="successWrap">
+        <div class="success-icon">🎉</div>
+        <h3 class="success-title">Presença confirmada, <em id="successNome">campeão</em>!</h3>
+        <p class="success-desc">
+          Você está dentro dos sorteios. Nos vemos na live — sexta-feira, dia 27, às 19h.<br><br>
+          Compartilha com quem você quer ver lá também 👇
+        </p>
+        <a href="#" id="successWppBtn" class="success-btn">💬 Entrar no grupo da live</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- CTA BOTTOM -->
+<section class="cta-bottom">
+  <h2 class="cta-bottom-title reveal">Venha se tornar um <em>Conector.</em></h2>
+  <p class="cta-bottom-sub reveal">Quem conecta de verdade, converte de verdade. Te esperamos na live.</p>
+  <a href="#" id="ctaWppBtn" class="cta-bottom-btn reveal">💬 Entrar no grupo agora</a>
+</section>
+
+<footer>
+  <div class="footer-logo">Profluxus Conexão</div>
+  <p class="footer-sub">Evento online · 27 de março de 2026 as 19h · Gratuito</p>
+</footer>
+
+<script>
+/* ============================================================
+   CONFIGURAÇÃO
+============================================================ */
+var RSVP_CONFIG = {
+  webhook_url:  'https://webhook.n8ng3.com.br/webhook/evento-profluxus-conexao',
+  contador_url: 'https://lp.profluxus.com/evento/conexao/contador.php',
+  rsvp_url:     'https://lp.profluxus.com/evento/conexao/rsvp.php',
+  token:        'sign@profluxus3DS',
+  grupo_wpp:    'https://chat.whatsapp.com/DCE6W0DITMs0wUeV7UklD5',
+};
+
+/* ============================================================
+   ESTADO
+============================================================ */
+var formData = {
+  trafego:  null,
+  banido:   null,
+  presenca: null,
+  termo:    false,
+};
+
+/* ============================================================
+   RADIO GROUPS
+============================================================ */
+function initRadioGroup(groupId, key, errId) {
+  var group = document.getElementById(groupId);
+  if (!group) return;
+  group.querySelectorAll('.radio-option').forEach(function(opt) {
+    opt.addEventListener('click', function() {
+      group.querySelectorAll('.radio-option').forEach(function(o) { o.classList.remove('selected'); });
+      opt.classList.add('selected');
+      formData[key] = opt.dataset.value;
+      var err = document.getElementById(errId);
+      if (err) err.classList.remove('show');
+    });
+  });
+}
+
+/* ============================================================
+   TERMO
+============================================================ */
+function initTermo() {
+  var wrap   = document.getElementById('termoWrap');
+  var toggle = document.getElementById('termoToggle');
+
+  if (!wrap) return;
+
+  wrap.addEventListener('click', function(e) {
+    if (e.target === toggle) return;
+    formData.termo = !formData.termo;
+    wrap.classList.toggle('checked', formData.termo);
+    document.getElementById('errTermo').classList.remove('show');
+  });
+
+  toggle.addEventListener('click', function(e) {
+    e.stopPropagation();
+    wrap.classList.toggle('expanded');
+    toggle.textContent = wrap.classList.contains('expanded') ? '- Fechar termos' : '+ Ver termos completos';
+  });
+}
+
+/* ============================================================
+   VALIDAÇÃO
+============================================================ */
+function validar() {
+  var ok   = true;
+  var nome = document.getElementById('fieldNome').value.trim();
+  var wpp  = document.getElementById('fieldWpp').value.trim();
+
+  if (!nome) { document.getElementById('errNome').classList.add('show');    ok = false; }
+  else        { document.getElementById('errNome').classList.remove('show'); }
+
+  if (!wpp)  { document.getElementById('errWpp').classList.add('show');     ok = false; }
+  else        { document.getElementById('errWpp').classList.remove('show'); }
+
+  if (!formData.trafego)  { document.getElementById('errTrafego').classList.add('show');  ok = false; }
+  if (!formData.banido)   { document.getElementById('errBan').classList.add('show');      ok = false; }
+  if (!formData.presenca) { document.getElementById('errPresenca').classList.add('show'); ok = false; }
+  if (!formData.termo)    { document.getElementById('errTermo').classList.add('show');    ok = false; }
+
+  return ok;
+}
+
+/* ============================================================
+   SUCESSO
+============================================================ */
+function mostrarSucesso(nome) {
+  document.getElementById('formBody').style.display = 'none';
+  var sw = document.getElementById('successWrap');
+  sw.classList.add('show');
+  var partes = nome.split(' ');
+  document.getElementById('successNome').textContent = partes[0];
+  sw.scrollIntoView({ behavior: 'smooth', block: 'center' });
+}
+
+/* ============================================================
+   ENVIO
+============================================================ */
+async function enviarDados() {
+  var nome = document.getElementById('fieldNome').value.trim();
+  var pais = document.getElementById('fieldPais').value;
+  var wpp  = document.getElementById('fieldWpp').value.trim();
+  var btn  = document.getElementById('submitBtn');
+
+  btn.disabled    = true;
+  btn.textContent = '⏳ Enviando...';
+
+  var payload = {
+    nome:            nome,
+    pais:            pais,
+    whatsapp:        wpp,
+    trafego_proprio: formData.trafego,
+    banido:          formData.banido,
+    presenca:        formData.presenca,
+    termo_aceito:    true,
+    origem:          'rsvp',
+    evento:          'Profluxus Conexao',
+    data_inscricao:  new Date().toISOString(),
+    envio_tipo:      'rsvp_completo',
+  };
+
+  /* 1 — Envia para o n8n */
+  try {
+    await fetch(RSVP_CONFIG.webhook_url, {
+      method:  'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body:    JSON.stringify(payload),
+    });
+    console.log('[RSVP] n8n OK');
+  } catch(e) { console.warn('[RSVP] n8n falhou:', e); }
+
+  /* 2 — Salva no rsvp.json via rsvp.php */
+  try {
+    var r = await fetch(RSVP_CONFIG.rsvp_url, {
+      method:  'POST',
+      headers: {
+        'Content-Type':      'application/json',
+        'x-profluxus-token': RSVP_CONFIG.token,
+      },
+      body: JSON.stringify(payload),
+    });
+    var d = await r.json();
+    console.log('[RSVP] rsvp.php:', d);
+  } catch(e) { console.warn('[RSVP] rsvp.php falhou:', e); }
+
+  /* 3 — Registra no contador (para aparecer nos toasts da LP) */
+  try {
+    await fetch(RSVP_CONFIG.contador_url + '?acao=lead', {
+      method:  'POST',
+      headers: {
+        'Content-Type':      'application/json',
+        'x-profluxus-token': RSVP_CONFIG.token,
+      },
+      body: JSON.stringify({ nome: nome, cidade: '' }),
+    });
+    console.log('[RSVP] contador OK');
+  } catch(e) { console.warn('[RSVP] contador falhou:', e); }
+
+  mostrarSucesso(nome);
+}
+
+/* ============================================================
+   SCROLL REVEAL
+============================================================ */
+function initReveal() {
+  var reveals = document.querySelectorAll('.reveal');
+  var obs = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e) {
+      if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }
+    });
+  }, { threshold: 0.1 });
+  reveals.forEach(function(r) { obs.observe(r); });
+}
+
+/* ============================================================
+   INIT
+============================================================ */
+document.addEventListener('DOMContentLoaded', function() {
+
+  /* Links do grupo */
+  document.getElementById('successWppBtn').href = RSVP_CONFIG.grupo_wpp;
+  document.getElementById('ctaWppBtn').href     = RSVP_CONFIG.grupo_wpp;
+
+  initRadioGroup('radioTrafego',  'trafego',  'errTrafego');
+  initRadioGroup('radioBan',      'banido',   'errBan');
+  initRadioGroup('radioPresenca', 'presenca', 'errPresenca');
+  initTermo();
+  initReveal();
+
+  document.getElementById('submitBtn').addEventListener('click', function() {
+    if (validar()) enviarDados();
+  });
+
+  document.getElementById('fieldNome').addEventListener('input', function() {
+    document.getElementById('errNome').classList.remove('show');
+  });
+  document.getElementById('fieldWpp').addEventListener('input', function() {
+    document.getElementById('errWpp').classList.remove('show');
+  });
+
+});
+</script>
+</body>
+</html>

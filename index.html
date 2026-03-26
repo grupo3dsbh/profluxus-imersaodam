@@ -1,0 +1,1650 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- ===== OPEN GRAPH / SEO ===== -->
+<meta name="description" content="Aprenda como o cérebro humano decide comprar — e multiplique seus resultados com neurociência, tecnologia e automação. Evento gratuito, 27 de março.">
+
+<!-- Open Graph (WhatsApp, Facebook, LinkedIn) -->
+<meta property="og:type"        content="website">
+<meta property="og:url"         content="https://lp.profluxus.com/evento/conexao">
+<meta property="og:title"       content="Profluxus Conexão | Evento Online Gratuito · 27 de Março - 19h">
+<meta property="og:description" content="Aprenda como o cérebro humano decide comprar — e multiplique seus resultados com neurociência, tecnologia e automação. Evento gratuito, 27 de Março - 19h.">
+<meta property="og:image"       content="og-image.jpeg">
+<meta property="og:image:width"  content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale"      content="pt_BR">
+<meta property="og:site_name"   content="Profluxus Conexão">
+
+<!-- Twitter Card -->
+<meta name="twitter:card"        content="summary_large_image">
+<meta name="twitter:title"       content="Profluxus Conexão | Evento Online Gratuito · 27 de Março - 19h">
+<meta name="twitter:description" content="Aprenda como o cérebro humano decide comprar — e multiplique seus resultados com neurociência, tecnologia e automação.">
+<meta name="twitter:image"       content="img/og-image.jpeg">
+
+<!-- Favicon -->
+<link rel="icon" href="img/icone.jpg" type="image/jpeg">
+    
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profluxus Conexão | Evento 27 de Março - 19h – Gratuito</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="icon" href="img/icone.jpg" type="image/jpeg">
+
+<script src="config.js"></script>
+<script src="scriptconexao.js"></script>
+<script src="social-proof.js"></script>
+
+
+<style>
+  @font-face {
+    font-family: 'Posterama';
+    src: url('./posterama-regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  :root {
+    --deep: #05080f;
+    --navy: #080e1e;
+    --ink: #0c1428;
+    --gold: #e8a834;
+    --gold-light: #f5c96a;
+    --gold-dim: rgba(232,168,52,0.15);
+    --gold-glow: rgba(232,168,52,0.35);
+    --teal: #00c6a2;
+    --teal-dim: rgba(0,198,162,0.12);
+    --white: #f8f5ef;
+    --muted: rgba(248,245,239,0.55);
+    --text: rgba(248,245,239,0.88);
+    --border: rgba(232,168,52,0.22);
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--deep);
+    color: var(--text);
+    font-family: 'Posterama', 'DM Sans', sans-serif;
+    overflow-x: hidden;
+    line-height: 1.6;
+  }
+
+  body::before {
+    content: '';
+    position: fixed; inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+    pointer-events: none; z-index: 0; opacity: 0.5;
+  }
+
+  /* ===== NAVBAR ===== */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 18px 40px;
+    background: rgba(5,8,15,0.85);
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .nav-logo {
+    font-family: 'Posterama', 'Space Mono', monospace;
+    font-size: 16px; font-weight: 700;
+    color: var(--gold);
+    letter-spacing: 0.08em;
+  }
+
+  .nav-date {
+    font-family: 'Space Mono', monospace;
+    font-size: 12px;
+    color: var(--muted);
+    letter-spacing: 0.1em;
+  }
+
+  .nav-cta {
+    background: var(--gold);
+    color: var(--deep);
+    font-size: 12px; font-weight: 700;
+    padding: 9px 22px;
+    border: none; cursor: pointer;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-decoration: none;
+    clip-path: polygon(6px 0%, 100% 0%, calc(100% - 6px) 100%, 0% 100%);
+    transition: background 0.2s, transform 0.2s;
+  }
+  .nav-cta:hover { background: var(--gold-light); transform: translateY(-1px); }
+
+  /* ===== HERO ===== */
+  .hero {
+    min-height: 100vh;
+    display: flex; align-items: center; justify-content: center;
+    position: relative;
+    padding: 120px 40px 80px;
+    overflow: hidden;
+  }
+
+  .hero-bg {
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(ellipse 80% 60% at 50% 0%, rgba(232,168,52,0.12) 0%, transparent 60%),
+      radial-gradient(ellipse 60% 40% at 80% 80%, rgba(0,198,162,0.08) 0%, transparent 50%),
+      radial-gradient(ellipse 50% 50% at 10% 60%, rgba(232,168,52,0.06) 0%, transparent 50%);
+  }
+
+  .hero-grid {
+    position: absolute; inset: 0;
+    background-image:
+      linear-gradient(rgba(232,168,52,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(232,168,52,0.04) 1px, transparent 1px);
+    background-size: 60px 60px;
+    mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 30%, transparent 80%);
+  }
+
+  .hero-content {
+    max-width: 900px;
+    text-align: center;
+    position: relative; z-index: 2;
+  }
+
+  .event-badge {
+    display: inline-flex; align-items: center; gap: 10px;
+    background: var(--gold-dim);
+    border: 1px solid var(--border);
+    padding: 8px 20px;
+    border-radius: 100px;
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    color: var(--gold);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+    animation: fadeDown 0.7s ease both;
+  }
+
+  .badge-dot {
+    width: 6px; height: 6px;
+    background: var(--gold);
+    border-radius: 50%;
+    animation: pulse 2s ease infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(0.7); }
+  }
+
+  .hero-eyebrow {
+    font-family: 'Posterama', 'Space Mono', monospace;
+    font-size: 14px;
+    color: var(--teal);
+    letter-spacing: 0.15em;
+    margin-bottom: 16px;
+    animation: fadeDown 0.7s 0.1s ease both;
+  }
+
+  .hero-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(44px, 7vw, 88px);
+    font-weight: 900;
+    line-height: 1.0;
+    color: var(--white);
+    margin-bottom: 8px;
+    animation: fadeDown 0.7s 0.2s ease both;
+  }
+
+  .hero-title .highlight {
+    color: var(--gold);
+    font-style: italic;
+    position: relative;
+  }
+
+  .hero-subtitle-line {
+    font-family: 'Posterama', serif;
+    font-size: clamp(20px, 3.2vw, 34px);
+    font-weight: 400;
+    color: var(--muted);
+    margin-bottom: 28px;
+    animation: fadeDown 0.7s 0.3s ease both;
+  }
+
+  .hero-tagline {
+    font-size: 18px;
+    color: var(--text);
+    max-width: 600px;
+    margin: 0 auto 40px;
+    font-weight: 300;
+    animation: fadeDown 0.7s 0.4s ease both;
+  }
+
+  .hero-tagline strong { font-weight: 700; color: var(--white); }
+
+  .hero-cta-group {
+    display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;
+    animation: fadeDown 0.7s 0.5s ease both;
+  }
+
+  .btn-primary {
+    display: inline-flex; align-items: center; gap: 10px;
+    background: linear-gradient(135deg, var(--gold), #d4920a);
+    color: var(--deep);
+    font-size: 15px; font-weight: 700;
+    padding: 16px 36px;
+    border: none; cursor: pointer;
+    text-decoration: none;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    clip-path: polygon(10px 0%, 100% 0%, calc(100% - 10px) 100%, 0% 100%);
+    box-shadow: 0 0 40px var(--gold-glow), inset 0 1px 0 rgba(255,255,255,0.2);
+    transition: all 0.25s;
+  }
+  .btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 50px var(--gold-glow);
+  }
+
+  .btn-secondary {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: transparent;
+    color: var(--white);
+    font-size: 14px; font-weight: 500;
+    padding: 16px 28px;
+    border: 1px solid var(--border);
+    text-decoration: none;
+    letter-spacing: 0.04em;
+    transition: all 0.25s;
+  }
+  .btn-secondary:hover { border-color: var(--gold); color: var(--gold); }
+
+  .hero-stats {
+    display: flex; gap: 0; justify-content: center;
+    margin-top: 64px;
+    border: 1px solid var(--border);
+    background: rgba(255,255,255,0.02);
+    backdrop-filter: blur(8px);
+    animation: fadeUp 0.7s 0.6s ease both;
+  }
+
+  .stat { flex: 1; padding: 24px 20px; text-align: center; border-right: 1px solid var(--border); min-width: 150px; }
+  .stat:last-child { border-right: none; }
+
+  .stat-number { font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 900; color: var(--gold); display: block; }
+  .stat-label { font-size: 11px; color: var(--muted); letter-spacing: 0.1em; text-transform: uppercase; margin-top: 4px; display: block; }
+
+  @keyframes fadeDown { from { opacity: 0; transform: translateY(-20px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+
+  .section-divider { width: 100%; height: 1px; background: linear-gradient(90deg, transparent, var(--gold), transparent); opacity: 0.3; }
+
+  section { position: relative; z-index: 1; }
+
+  .section-inner { max-width: 1100px; margin: 0 auto; padding: 0 40px; }
+
+  .section-label {
+    font-family: 'Posterama', 'Space Mono', monospace;
+    font-size: 12px; color: var(--teal); letter-spacing: 0.2em; text-transform: uppercase;
+    margin-bottom: 16px; display: flex; align-items: center; gap: 12px;
+  }
+  .section-label::before { content: ''; width: 32px; height: 1px; background: var(--teal); }
+
+  .section-title { font-family: 'Playfair Display', serif; font-size: clamp(28px, 4vw, 46px); font-weight: 700; color: var(--white); line-height: 1.15; margin-bottom: 20px; }
+  .section-title em { color: var(--gold); font-style: italic; }
+
+  /* ===== CTA DISTRIBUTED ===== */
+  .cta-inline {
+    background: var(--gold-dim); border: 1px solid var(--border);
+    padding: 40px 32px; margin: 60px 0; text-align: center;
+    position: relative; overflow: hidden;
+  }
+  .cta-inline::before { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(232,168,52,0.08) 0%, transparent 60%); }
+  .cta-inline-content { position: relative; z-index: 2; }
+  .cta-inline-text { font-family: 'Posterama'; font-size: 18px; color: var(--white); margin-bottom: 20px; font-weight: 600; }
+  .cta-inline-btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: var(--gold); color: var(--deep);
+    font-size: 14px; font-weight: 700; padding: 12px 28px;
+    border: none; cursor: pointer; text-decoration: none;
+    letter-spacing: 0.06em; text-transform: uppercase; transition: all 0.25s;
+  }
+  .cta-inline-btn:hover { background: var(--gold-light); transform: translateY(-2px); }
+
+  /* ===== SPEAKER FEATURED ===== */
+  .speaker-hero { padding: 50px 0; background: linear-gradient(180deg, var(--deep) 0%, var(--navy) 100%); overflow: hidden; }
+  .speaker-hero-inner { max-width: 1100px; margin: 0 auto; padding: 0 40px; display: grid; grid-template-columns: 1fr 1.4fr; gap: 80px; align-items: center; }
+  .speaker-hero-photo { position: relative; }
+  .photo-frame { position: relative; width: 100%; max-width: 400px; aspect-ratio: 3/4; margin: 0 auto; }
+
+  .photo-placeholder {
+    width: 100%; height: 100%;
+    background: linear-gradient(135deg, var(--ink) 0%, #111827 100%);
+    border: 2px solid var(--border);
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 12px; color: var(--muted); font-size: 13px; letter-spacing: 0.08em;
+    position: relative; overflow: hidden;
+  }
+  .photo-placeholder::before { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, var(--gold-dim) 0%, transparent 60%); }
+  .photo-icon { font-size: 48px; filter: grayscale(1) opacity(0.5); }
+
+  /* Foto real quando configurada */
+  .photo-real { width: 100%; height: 100%; object-fit: cover; object-position: top center; display: block; }
+
+  .photo-corner { position: absolute; width: 24px; height: 24px; border-color: var(--gold); border-style: solid; }
+  .photo-corner.tl { top: -2px; left: -2px; border-width: 2px 0 0 2px; }
+  .photo-corner.tr { top: -2px; right: -2px; border-width: 2px 2px 0 0; }
+  .photo-corner.bl { bottom: -2px; left: -2px; border-width: 0 0 2px 2px; }
+  .photo-corner.br { bottom: -2px; right: -2px; border-width: 0 2px 2px 0; }
+  .photo-badge-float { position: absolute; bottom: -16px; right: -16px; background: var(--gold); color: var(--deep); font-family: 'Posterama', 'Space Mono', monospace; font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 10px 16px; white-space: nowrap; clip-path: polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%); }
+
+  .speaker-rank { display: inline-flex; align-items: center; gap: 8px; background: var(--gold-dim); border: 1px solid var(--border); padding: 6px 16px; margin-bottom: 24px; font-family: 'Posterama', 'Space Mono', monospace; font-size: 10px; color: var(--gold); letter-spacing: 0.15em; text-transform: uppercase; }
+  .speaker-name { font-family: 'Playfair Display', serif; font-size: clamp(38px, 5vw, 64px); font-weight: 900; color: var(--white); line-height: 1.0; margin-bottom: 6px; }
+  .speaker-role { font-family: 'Posterama'; font-size: 16px; color: var(--gold); font-weight: 500; margin-bottom: 28px; letter-spacing: 0.04em; }
+  .speaker-bio { font-size: 16px; color: var(--text); line-height: 1.75; font-weight: 300; margin-bottom: 32px; }
+  .speaker-bio strong { color: var(--white); font-weight: 600; }
+  .speaker-metrics { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-bottom: 32px; }
+  .metric-card { background: rgba(255,255,255,0.03); border: 1px solid var(--border); padding: 16px 20px; position: relative; overflow: hidden; }
+  .metric-card::before { content: ''; position: absolute; top: 0; left: 0; width: 3px; height: 100%; background: var(--gold); }
+  .metric-val { font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 900; color: var(--gold); display: block; }
+  .metric-desc { font-size: 12px; color: var(--muted); margin-top: 2px; }
+  .speaker-tags { display: flex; gap: 8px; flex-wrap: wrap; }
+  .tag { background: var(--teal-dim); border: 1px solid rgba(0,198,162,0.25); color: var(--teal); font-size: 11px; font-family: 'Posterama', 'Space Mono', monospace; padding: 5px 12px; letter-spacing: 0.08em; text-transform: uppercase; }
+
+  /* ===== LEARN ===== */
+  .learn-section { padding: 100px 0; background: var(--deep); }
+  .learn-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2px; margin-top: 60px; background: var(--border); border: 1px solid var(--border); }
+  .learn-card { background: var(--deep); padding: 36px 32px; position: relative; overflow: hidden; transition: background 0.3s; }
+  .learn-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: linear-gradient(90deg, var(--gold), var(--teal)); transform: scaleX(0); transform-origin: left; transition: transform 0.4s; }
+  .learn-card:hover { background: rgba(255,255,255,0.03); }
+  .learn-card:hover::before { transform: scaleX(1); }
+  .learn-number { font-family: 'Playfair Display', serif; font-size: 60px; font-weight: 900; color: var(--gold-dim); line-height: 1; position: absolute; top: 20px; right: 24px; transition: color 0.3s; }
+  .learn-card:hover .learn-number { color: var(--gold-glow); }
+  .learn-icon { font-size: 28px; margin-bottom: 16px; }
+  .learn-title { font-family: 'Posterama', serif; font-size: 20px; font-weight: 700; color: var(--white); margin-bottom: 10px; }
+  .learn-text { font-size: 14px; color: var(--muted); line-height: 1.65; }
+
+  /* ===== SPEAKERS SECTION ===== */
+    .speakers-section { padding: 100px 0; background: var(--navy); }
+    
+    .speakers-grid {
+      display: flex;
+      gap: 2px;
+      margin-top: 60px;
+      min-height: 520px;
+      align-items: stretch;
+    }
+    
+    .speaker-card {
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      flex: 0 0 96px;
+      transition: flex 0.55s cubic-bezier(0.4,0,0.2,1),
+                  background 0.3s, border-color 0.3s;
+      background: var(--navy);
+      border: 1px solid transparent;
+    }
+    .speaker-card.expanded {
+      flex: 1 1 62%;
+      border-color: var(--border);
+      background: rgba(255,255,255,0.02);
+    }
+    .speaker-card.featured.expanded {
+      background: rgba(232,168,52,0.06);
+      border-color: var(--gold);
+    }
+    .speakers-grid.has-expanded .speaker-card:not(.expanded) {
+      flex: 0 0 88px;
+    }
+    
+    /* ── Mini layout ── */
+    .sc-mini-layout {
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      height: 100%; min-height: 520px;
+      padding: 24px 0; gap: 16px;
+      transition: opacity 0.2s;
+    }
+    .speaker-card.expanded .sc-mini-layout {
+      opacity: 0; pointer-events: none;
+      position: absolute; inset: 0;
+    }
+    
+    .sc-mini-photo {
+      width: 58px; height: 58px;
+      border-radius: 50%;
+      border: 2px solid var(--border);
+      overflow: hidden;
+      background: linear-gradient(135deg, var(--ink), #1a2035);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 22px; flex-shrink: 0;
+      transition: border-color 0.3s, transform 0.3s;
+      position: relative;
+    }
+    .speaker-card:hover .sc-mini-photo { border-color: var(--gold); transform: scale(1.06); }
+    .sc-mini-photo img { width: 100%; height: 100%; object-fit: cover; object-position: top center; border-radius: 50%; }
+    .sc-mini-photo::after {
+      content: ''; position: absolute; bottom: 1px; right: 1px;
+      width: 12px; height: 12px;
+      background: var(--gold); border-radius: 50%;
+      border: 2px solid var(--navy);
+      animation: pulse 2s infinite;
+    }
+    
+    .sc-mini-name {
+      writing-mode: vertical-rl; text-orientation: mixed;
+      transform: rotate(180deg);
+      font-family: 'Posterama', serif;
+      font-size: 12px; font-weight: 700;
+      color: var(--muted); letter-spacing: 0.08em;
+      white-space: nowrap; transition: color 0.3s;
+    }
+    .speaker-card:hover .sc-mini-name { color: var(--white); }
+    
+    .sc-mini-hint {
+      font-size: 14px; opacity: 0.3;
+      transition: opacity 0.3s, transform 0.3s;
+    }
+    .speaker-card:hover .sc-mini-hint { opacity: 1; transform: rotate(90deg); }
+    
+    /* ── Expanded layout ── */
+    .sc-expanded-layout {
+      display: flex; height: 100%; min-height: 520px;
+      opacity: 0; pointer-events: none;
+      transition: opacity 0.3s 0.25s;
+      position: absolute; inset: 0;
+    }
+    .speaker-card.expanded .sc-expanded-layout {
+      opacity: 1; pointer-events: all;
+      position: relative; inset: auto;
+    }
+    
+    .sc-photo-full {
+      flex: 0 0 42%; position: relative;
+      overflow: hidden;
+      background: linear-gradient(135deg, var(--ink), #0d1525);
+    }
+    .sc-photo-full img {
+      width: 100%; height: 100%;
+      object-fit: cover; object-position: top center;
+      display: block; transition: transform 0.6s ease;
+    }
+    .speaker-card.expanded:hover .sc-photo-full img { transform: scale(1.03); }
+    .sc-photo-full::after {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(90deg, transparent 55%, rgba(8,14,30,0.92) 100%);
+      pointer-events: none;
+    }
+    .sc-photo-placeholder {
+      width: 100%; height: 100%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 72px;
+    }
+    
+    .sc-info {
+      flex: 1; padding: 40px 32px;
+      display: flex; flex-direction: column; justify-content: center;
+      overflow-y: auto;
+    }
+    .sc-badge {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: var(--gold-dim); border: 1px solid var(--border);
+      padding: 4px 12px; margin-bottom: 16px;
+      font-family: 'Space Mono', monospace;
+      font-size: 10px; color: var(--gold); letter-spacing: 0.15em; text-transform: uppercase;
+      align-self: flex-start;
+    }
+    
+    .speaker-card-name {
+      font-family: 'Posterama', serif;
+      font-size: clamp(20px, 2.2vw, 30px); font-weight: 700;
+      color: var(--white); margin-bottom: 4px;
+    }
+    .speaker-card.featured .speaker-card-name { color: var(--gold); }
+    .speaker-card-title { font-size: 13px; color: var(--gold); margin-bottom: 16px; font-weight: 500; }
+    .speaker-card-bio { font-size: 13px; color: var(--muted); line-height: 1.65; margin-bottom: 20px; }
+    
+    .speaker-learns { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+    .speaker-learns li {
+      display: flex; align-items: flex-start; gap: 10px;
+      font-size: 13px; color: var(--text); line-height: 1.5;
+      opacity: 0; transform: translateX(-10px);
+      transition: opacity 0.3s, transform 0.3s;
+    }
+    .speaker-card.expanded .speaker-learns li { opacity: 1; transform: translateX(0); }
+    .speaker-card.expanded .speaker-learns li:nth-child(1) { transition-delay: 0.35s; }
+    .speaker-card.expanded .speaker-learns li:nth-child(2) { transition-delay: 0.45s; }
+    .speaker-card.expanded .speaker-learns li:nth-child(3) { transition-delay: 0.55s; }
+    .speaker-learns li::before { content: '✓'; color: var(--teal); font-weight: 700; flex-shrink: 0; margin-top: 1px; }
+    
+    /* Mobile */
+    @media (max-width: 768px) {
+      .speakers-grid { flex-direction: column; min-height: unset; }
+      .speaker-card { flex: none !important; width: 100%; border: 1px solid var(--border); }
+      .sc-mini-layout { min-height: 72px; flex-direction: row; padding: 16px 20px; gap: 12px; }
+      .sc-mini-name { writing-mode: horizontal-tb; transform: none; }
+      .sc-mini-hint { transform: none !important; }
+      .speaker-card:hover .sc-mini-hint { transform: rotate(90deg) !important; }
+      .sc-expanded-layout { flex-direction: column; min-height: unset; position: relative; inset: auto; opacity: 1; pointer-events: all; }
+      .sc-photo-full { flex: 0 0 240px; }
+      .speaker-card .sc-mini-layout { opacity: 1; pointer-events: all; position: relative; }
+      .speaker-card.expanded .sc-mini-layout { display: none; }
+    }
+
+  /* ===== ACOPEL ===== */
+  .acopel-section { padding: 100px 0; background: var(--deep); overflow: hidden; position: relative; }
+  .acopel-section::before { content: 'ACCoPeL'; position: absolute; font-family: 'Posterama'; font-size: 220px; font-weight: 900; color: rgba(232,168,52,0.03); top: 50%; left: 50%; transform: translate(-50%, -50%); pointer-events: none; white-space: nowrap; letter-spacing: -4px; }
+  .acopel-header { text-align: center; margin-bottom: 70px; }
+  .method-badge { display: inline-flex; align-items: center; gap: 10px; background: linear-gradient(135deg, rgba(232,168,52,0.15), rgba(0,198,162,0.08)); border: 1px solid var(--border); padding: 12px 28px; margin-bottom: 28px; font-family: 'Posterama', 'Space Mono', monospace; font-size: 13px; font-weight: 700; color: var(--gold); letter-spacing: 0.2em; text-transform: uppercase; }
+  .acopel-pillars { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; position: relative; z-index: 2; }
+  .pillar { padding: 48px 32px; text-align: center; position: relative; border-right: 1px solid var(--border); border-top: 1px solid var(--border); transition: background 0.3s; }
+  .pillar:last-child { border-right: none; }
+  .pillar:hover { background: var(--gold-dim); }
+  .pillar-number { font-family: 'Posterama', 'Space Mono', monospace; font-size: 11px; color: var(--gold); letter-spacing: 0.2em; margin-bottom: 20px; }
+  .pillar-letter { font-family: 'Posterama'; font-size: 72px; font-weight: 900; color: var(--white); line-height: 1; margin-bottom: 16px; position: relative; }
+  .pillar-letter span { color: var(--gold); }
+  .pillar-name { font-family: 'Posterama', serif; font-size: 20px; font-weight: 700; color: var(--white); margin-bottom: 12px; }
+  .pillar-desc { font-size: 13px; color: var(--muted); line-height: 1.65; }
+  .pillar-icon { font-size: 32px; margin-bottom: 20px; }
+  .pillar-connector { position: absolute; top: 50%; right: -1px; transform: translateY(-50%); width: 8px; height: 8px; background: var(--gold); border-radius: 50%; z-index: 2; }
+  .pillar:last-child .pillar-connector { display: none; }
+
+  /* ===== AUDIENCE ===== */
+  .audience-section { padding: 100px 0; background: var(--navy); }
+  .audience-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; margin-top: 60px; background: var(--border); }
+  .audience-card { background: var(--navy); padding: 40px 36px; display: flex; align-items: flex-start; gap: 20px; transition: background 0.3s; }
+  .audience-card:hover { background: var(--gold-dim); }
+  .audience-emoji { font-size: 32px; flex-shrink: 0; margin-top: 4px; }
+  .audience-card-title { font-family: 'Posterama', serif; font-size: 18px; font-weight: 700; color: var(--white); margin-bottom: 8px; }
+  .audience-card-text { font-size: 14px; color: var(--muted); line-height: 1.6; }
+
+  /* ===== CTA SECTION ===== */
+  .cta-section { padding: 120px 40px; text-align: center; position: relative; overflow: hidden; background: var(--deep); }
+  .cta-section::before { content: ''; position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 800px; height: 600px; background: radial-gradient(ellipse at center, rgba(232,168,52,0.12) 0%, transparent 70%); pointer-events: none; }
+  .cta-inner { position: relative; z-index: 2; max-width: 700px; margin: 0 auto; }
+  .cta-title { font-family: 'Posterama', serif; font-size: clamp(32px, 5vw, 56px); font-weight: 900; color: var(--white); line-height: 1.1; margin-bottom: 20px; }
+  .cta-title em { color: var(--gold); font-style: italic; }
+  .cta-subtitle { font-size: 18px; color: var(--muted); margin-bottom: 16px; font-weight: 300; }
+  .cta-warning { display: inline-flex; align-items: center; gap: 10px; background: rgba(0,198,162,0.1); border: 1px solid rgba(0,198,162,0.3); padding: 12px 24px; margin-bottom: 40px; font-size: 13px; color: var(--teal); letter-spacing: 0.04em; }
+
+  .cta-btn {
+    display: inline-flex; align-items: center; gap: 12px;
+    background: linear-gradient(135deg, var(--gold), #c8820a);
+    color: var(--deep); font-size: 17px; font-weight: 700;
+    padding: 20px 52px; border: none; cursor: pointer; text-decoration: none;
+    letter-spacing: 0.06em; text-transform: uppercase;
+    clip-path: polygon(14px 0%, 100% 0%, calc(100% - 14px) 100%, 0% 100%);
+    box-shadow: 0 0 60px var(--gold-glow), inset 0 1px 0 rgba(255,255,255,0.25);
+    transition: all 0.3s; position: relative; overflow: hidden;
+  }
+  .cta-btn::before { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(255,255,255,0.15) 0%, transparent 50%); opacity: 0; transition: opacity 0.3s; }
+  .cta-btn:hover { transform: translateY(-4px); box-shadow: 0 12px 70px rgba(232,168,52,0.5); }
+  .cta-btn:hover::before { opacity: 1; }
+  .cta-note { margin-top: 24px; font-size: 12px; color: var(--muted); display: flex; align-items: center; gap: 8px; justify-content: center; }
+
+  footer { border-top: 1px solid var(--border); padding: 40px; text-align: center; background: var(--deep); }
+  .footer-logo { font-family: 'Posterama', 'Space Mono', monospace; font-size: 16px; font-weight: 700; color: var(--gold); letter-spacing: 0.12em; margin-bottom: 8px; }
+  .footer-sub { font-size: 12px; color: var(--muted); letter-spacing: 0.06em; }
+
+  .float-date {
+    position: fixed; bottom: 40px; right: 40px;
+    background: var(--gold); color: var(--deep);
+    font-family: 'Posterama', 'Space Mono', monospace;
+    font-size: 12px; font-weight: 700; padding: 14px 22px;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    clip-path: polygon(10px 0%, 100% 0%, calc(100% - 10px) 100%, 0% 100%);
+    box-shadow: 0 8px 32px var(--gold-glow); z-index: 50;
+    text-decoration: none; display: flex; align-items: center; gap: 8px;
+    transition: transform 0.2s;
+  }
+  .float-date:hover { transform: scale(1.05); }
+
+  /* ============================================================
+     MODAL TYPEBOT
+  ============================================================ */
+  .modal-overlay {
+    position: fixed; inset: 0; z-index: 200;
+    background: rgba(5,8,15,0.92);
+    backdrop-filter: blur(10px);
+    display: flex; align-items: center; justify-content: center;
+    padding: 20px;
+    opacity: 0; pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+  .modal-overlay.active {
+    opacity: 1; pointer-events: all;
+  }
+
+  .modal-box {
+    width: 100%; max-width: 520px;
+    background: var(--navy);
+    border: 1px solid var(--border);
+    position: relative;
+    overflow: hidden;
+    transform: translateY(30px) scale(0.97);
+    transition: transform 0.35s cubic-bezier(0.34,1.56,0.64,1);
+  }
+  .modal-overlay.active .modal-box {
+    transform: translateY(0) scale(1);
+  }
+
+  /* Linha dourada topo */
+  .modal-box::before {
+    content: '';
+    position: absolute; top: 0; left: 0; right: 0; height: 3px;
+    background: linear-gradient(90deg, var(--gold), var(--teal), var(--gold));
+    background-size: 200% 100%;
+    animation: shimmer 2.5s linear infinite;
+  }
+  @keyframes shimmer { 0% { background-position: 0% 0; } 100% { background-position: 200% 0; } }
+
+  .modal-header {
+    padding: 32px 36px 20px;
+    border-bottom: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: space-between;
+  }
+
+  .modal-brand {
+    display: flex; align-items: center; gap: 10px;
+  }
+  .modal-brand-dot {
+    width: 8px; height: 8px; background: var(--gold); border-radius: 50%;
+    animation: pulse 2s infinite;
+  }
+  .modal-brand-name {
+    font-family: 'Posterama', 'Space Mono', monospace;
+    font-size: 12px; color: var(--gold); letter-spacing: 0.15em; text-transform: uppercase;
+  }
+
+  .modal-close {
+    background: none; border: none; cursor: pointer;
+    color: var(--muted); font-size: 20px; line-height: 1;
+    padding: 4px 8px; transition: color 0.2s;
+    display: flex; align-items: center; justify-content: center;
+    width: 32px; height: 32px;
+  }
+  .modal-close:hover { color: var(--white); }
+
+  /* Progress bar */
+  .modal-progress-wrap {
+    padding: 16px 36px 0;
+    display: flex; align-items: center; gap: 12px;
+  }
+  .modal-progress-bar {
+    flex: 1; height: 2px; background: rgba(232,168,52,0.15); border-radius: 1px; overflow: hidden;
+  }
+  .modal-progress-fill {
+    height: 100%; background: var(--gold); border-radius: 1px;
+    transition: width 0.5s cubic-bezier(0.4,0,0.2,1);
+  }
+  .modal-progress-label {
+    font-family: 'Space Mono', monospace; font-size: 11px; color: var(--muted); white-space: nowrap;
+  }
+
+  /* Steps container */
+  .modal-body {
+    padding: 32px 36px 36px;
+    min-height: 280px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .modal-step {
+    display: none;
+    flex-direction: column;
+    animation: stepIn 0.4s ease both;
+  }
+  .modal-step.active {
+    display: flex;
+  }
+
+  @keyframes stepIn {
+    from { opacity: 0; transform: translateX(24px); }
+    to   { opacity: 1; transform: translateX(0); }
+  }
+
+  /* Pergunta */
+  .modal-question {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(20px, 3vw, 26px);
+    font-weight: 700; color: var(--white);
+    line-height: 1.3; margin-bottom: 8px;
+  }
+  .modal-question-desc {
+    font-size: 14px; color: var(--muted); margin-bottom: 28px; line-height: 1.6; font-weight: 300;
+  }
+
+  /* Input texto/phone/email */
+  .modal-input {
+    width: 100%;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid var(--border);
+    color: var(--white);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px; font-weight: 400;
+    padding: 14px 18px;
+    outline: none;
+    transition: border-color 0.2s, background 0.2s;
+    caret-color: var(--gold);
+    border-radius: 0;
+    -webkit-appearance: none;
+  }
+  .modal-input:focus {
+    border-color: var(--gold);
+    background: rgba(232,168,52,0.05);
+  }
+  .modal-input::placeholder { color: rgba(248,245,239,0.3); }
+
+  /* Radio options */
+  .modal-radio-grid {
+    display: flex; flex-direction: column; gap: 10px; margin-bottom: 4px;
+  }
+  .modal-radio-option {
+    display: flex; align-items: center; gap: 14px;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid var(--border);
+    padding: 14px 18px; cursor: pointer;
+    transition: all 0.2s;
+    font-size: 15px; color: var(--text);
+    user-select: none;
+  }
+  .modal-radio-option:hover { background: var(--gold-dim); border-color: var(--gold); color: var(--white); }
+  .modal-radio-option.selected { background: var(--gold-dim); border-color: var(--gold); color: var(--white); }
+
+  .modal-radio-dot {
+    width: 18px; height: 18px; border-radius: 50%;
+    border: 2px solid var(--border);
+    flex-shrink: 0; position: relative;
+    transition: border-color 0.2s;
+  }
+  .modal-radio-option.selected .modal-radio-dot {
+    border-color: var(--gold);
+  }
+  .modal-radio-option.selected .modal-radio-dot::after {
+    content: '';
+    position: absolute; inset: 3px; border-radius: 50%;
+    background: var(--gold);
+  }
+
+  /* Botão próximo */
+  .modal-next-btn {
+    margin-top: 24px;
+    display: flex; align-items: center; justify-content: center; gap: 8px;
+    background: linear-gradient(135deg, var(--gold), #c8820a);
+    color: var(--deep); font-size: 14px; font-weight: 700;
+    padding: 14px 32px; border: none; cursor: pointer;
+    letter-spacing: 0.08em; text-transform: uppercase;
+    width: 100%;
+    clip-path: polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%);
+    box-shadow: 0 4px 24px var(--gold-glow);
+    transition: all 0.25s;
+    font-family: 'DM Sans', sans-serif;
+  }
+  .modal-next-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 32px var(--gold-glow); }
+  .modal-next-btn:disabled { opacity: 0.4; cursor: not-allowed; transform: none; }
+
+  /* Tela final - confirm */
+  .modal-confirm {
+    text-align: center;
+    padding-top: 8px;
+  }
+  .modal-confirm-icon {
+    font-size: 56px; margin-bottom: 20px;
+    animation: bounceIn 0.6s cubic-bezier(0.34,1.56,0.64,1) both;
+  }
+  @keyframes bounceIn { from { opacity:0; transform: scale(0.5); } to { opacity:1; transform: scale(1); } }
+  .modal-confirm-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px; font-weight: 900; color: var(--white); margin-bottom: 12px;
+  }
+  .modal-confirm-desc {
+    font-size: 15px; color: var(--muted); line-height: 1.7; margin-bottom: 32px; font-weight: 300;
+  }
+  .modal-confirm-btn {
+    display: inline-flex; align-items: center; gap: 10px;
+    background: linear-gradient(135deg, #25D366, #128C7E);
+    color: #fff; font-size: 16px; font-weight: 700;
+    padding: 18px 40px; border: none; cursor: pointer;
+    text-decoration: none; letter-spacing: 0.04em;
+    clip-path: polygon(10px 0%, 100% 0%, calc(100% - 10px) 100%, 0% 100%);
+    box-shadow: 0 4px 32px rgba(37,211,102,0.35);
+    transition: all 0.25s; font-family: 'DM Sans', sans-serif;
+    width: 100%; justify-content: center; text-transform: uppercase;
+  }
+  .modal-confirm-btn:hover { transform: translateY(-3px); box-shadow: 0 8px 40px rgba(37,211,102,0.5); }
+
+  /* Error */
+  .modal-error {
+    font-size: 12px; color: #ff6b6b; margin-top: 8px; display: none;
+  }
+  .modal-error.show { display: block; }
+
+  /* ── Step icon ── */
+  .ms-icon {
+    font-size: 34px; margin-bottom: 8px; display: block;
+    animation: bounceIn 0.5s cubic-bezier(0.34,1.56,0.64,1) both;
+  }
+
+  /* ── Multi-field layout ── */
+  .ms-fields { display: flex; flex-direction: column; gap: 12px; margin-bottom: 4px; }
+  .ms-field-group { display: flex; flex-direction: column; gap: 5px; }
+  .ms-label {
+    font-size: 11px; font-weight: 600;
+    color: var(--muted); letter-spacing: 0.08em; text-transform: uppercase;
+  }
+
+  /* Select estilizado */
+  .modal-select {
+    appearance: none; -webkit-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23e8a834' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat; background-position: right 14px center;
+    padding-right: 40px !important; cursor: pointer;
+  }
+  .modal-select option { background: var(--navy); color: var(--white); }
+
+  /* ── Radio emoji cards ── */
+  .ro-emoji { font-size: 20px; flex-shrink: 0; width: 26px; text-align: center; }
+  .ro-label { font-size: 14px; color: var(--text); flex: 1; line-height: 1.4; }
+  .modal-radio-option.selected .ro-label { color: var(--white); font-weight: 500; }
+  .ro-check {
+    font-size: 13px; color: var(--gold);
+    opacity: 0; transform: scale(0);
+    transition: all 0.2s cubic-bezier(0.34,1.56,0.64,1); flex-shrink: 0;
+  }
+  .modal-radio-option.selected .ro-check { opacity: 1; transform: scale(1); }
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 900px) {
+    nav { padding: 16px 24px; }
+    .nav-date { display: none; }
+    .hero { padding: 100px 24px 60px; }
+    .hero-stats { flex-wrap: wrap; }
+    .stat { min-width: 140px; }
+    .speaker-hero-inner { grid-template-columns: 1fr; gap: 40px; }
+    .photo-frame { max-width: 260px; }
+    .acopel-pillars { grid-template-columns: 1fr 1fr; }
+    .pillar { border-right: none; border-right: 1px solid var(--border); }
+    .pillar:nth-child(2n) { border-right: none; }
+    .speakers-grid { grid-template-columns: 1fr; }
+    .audience-grid { grid-template-columns: 1fr; }
+    .section-inner { padding: 0 24px; }
+    .speaker-hero-inner { padding: 0 24px; }
+    .modal-header { padding: 24px 24px 16px; }
+    .modal-body { padding: 24px 24px 28px; }
+    .modal-progress-wrap { padding: 14px 24px 0; }
+  }
+
+  @media (max-width: 600px) {
+    .acopel-pillars { grid-template-columns: 1fr; }
+    .hero-stats { display: grid; grid-template-columns: 1fr 1fr; }
+    .stat { border-right: 1px solid var(--border); }
+    .stat:nth-child(2n) { border-right: none; }
+    .float-date { bottom: 20px; right: 20px; font-size: 10px; padding: 12px 16px; }
+  }
+
+  .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease, transform 0.7s ease; }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+  .reveal-delay-1 { transition-delay: 0.1s; }
+  .reveal-delay-2 { transition-delay: 0.2s; }
+  .reveal-delay-3 { transition-delay: 0.3s; }
+  .reveal-delay-4 { transition-delay: 0.4s; }
+  
+  .sc-instagram {
+  display: inline-flex; align-items: center; gap: 8px;
+  margin-top: 16px;
+  color: var(--muted);
+  font-size: 12px; font-family: 'Space Mono', monospace;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  transition: color 0.2s;
+  align-self: flex-start;
+}
+.sc-instagram:hover { color: var(--gold); }
+</style>
+</head>
+<body>
+
+<!-- ============================================================
+     MODAL TYPEBOT
+============================================================ -->
+<div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-label="Formulário de inscrição">
+  <div class="modal-box" id="modalBox">
+    
+    <div class="modal-header">
+      <div class="modal-brand">
+        <div class="modal-brand-dot"></div>
+        <span class="modal-brand-name" id="modalBrandName">Profluxus Conexão</span>
+      </div>
+      <button class="modal-close" id="modalClose" aria-label="Fechar">✕</button>
+    </div>
+
+    <div class="modal-progress-wrap">
+      <div class="modal-progress-bar">
+        <div class="modal-progress-fill" id="modalProgressFill" style="width:0%"></div>
+      </div>
+      <span class="modal-progress-label" id="modalProgressLabel"></span>
+    </div>
+
+    <div class="modal-body" id="modalBody">
+      <!-- Steps gerados via JS -->
+    </div>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo" id="navLogo">Profluxus Conexão</div>
+  <div class="nav-date" id="navDate">27 de Março - 19h · Evento Online Gratuito</div>
+  <a href="#" class="nav-cta js-open-modal">Garantir Acesso</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="event-badge">
+      <span class="badge-dot"></span>
+      Evento Online Gratuito · 27 de Março - 19h
+    </div>
+    <div class="hero-eyebrow">Profluxus Conexão que gera Conversão</div>
+    <h1 class="hero-title">
+      Domine a Arte<br>de <span class="highlight">Vender</span><br>Usando Neurociência
+    </h1>
+    <p class="hero-subtitle-line">O método que o mercado não te contou</p>
+    <p class="hero-tagline">
+      Se você ainda não fatura de 10k a 20k, você precisa aprender como o <strong>cérebro humano decide comprar</strong> — e como você pode usar isso para multiplicar seus resultados com estratégia, tecnologia e análise comportamental.
+    </p>
+    <div class="hero-cta-group">
+      <a href="#" class="btn-primary js-open-modal">
+        🚀 Quero meu acesso gratuito
+      </a>
+      <a href="#metodo" class="btn-secondary">
+        Conhecer o método
+      </a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-number">R$92M+</span>
+        <span class="stat-label">VGV gerado</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number">+ de 1.6M</span>
+        <span class="stat-label">mensagens enviadas</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number">100k+</span>
+        <span class="stat-label">disparos no WhatsApp</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number">19+</span>
+        <span class="stat-label">anos de mercado</span>
+      </div>
+      <div class="stat">
+          <span class="stat-number" id="spContador">247</span>
+          <span class="stat-label">pessoas garantiram acesso</span>
+        </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- GILSON — SPEAKER DESTAQUE -->
+<section class="speaker-hero" id="gilson">
+  <div class="speaker-hero-inner">
+    <div class="speaker-hero-photo reveal">
+      <div class="photo-frame">
+        <div class="photo-placeholder" id="photoGilsonWrap">
+          <div class="photo-corner tl"></div>
+          <div class="photo-corner tr"></div>
+          <div class="photo-corner bl"></div>
+          <div class="photo-corner br"></div>
+          <span class="photo-icon">📸</span>
+          <span>Foto de Gilson Junio</span>
+        </div>
+        <div class="photo-badge-float">★ Speaker Principal</div>
+      </div>
+    </div>
+    <div class="speaker-hero-info reveal reveal-delay-2">
+      <div class="speaker-rank">⭐ Especialista em Tecnologia</div>
+      <h2 class="speaker-name">Gilson Junio</h2>
+      <a href="https://instagram.com/gjpalves" target="_blank" rel="noopener noreferrer" class="sc-instagram" style="margin-top:20px;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          @gjpalves
+        </a>
+        <br>
+      <p class="speaker-role">Desenvolvedor · Estrategista Comercial · Parceiro Meta Oficial</p>
+      <p class="speaker-bio">
+        Com <strong>mais de 19 anos de mercado</strong>, Gilson é CEO do <strong>Grupo 3DS</strong> e desenvolvedor da <strong>Profluxus Talk</strong> — plataforma multicanal própria, com mais de <strong>1,6 milhão de mensagens enviadas</strong> e <strong>100 mil+ disparos realizados no WhatsApp sem banimento</strong>.
+        <br><br>
+        Parceiro oficial da <strong>Meta</strong> com integração às APIs de WhatsApp Business, Facebook e Instagram, ele combina tecnologia de ponta com gestão comercial estratégica para parques aquáticos — gerando mais de <strong>R$65 milhões em VGV</strong> em operações de venda.
+      </p>
+      <div class="speaker-metrics">
+        <div class="metric-card"><span class="metric-val">R$65M+</span><span class="metric-desc">em VGV gerado em operações comerciais no último ano</span></div>
+        <div class="metric-card"><span class="metric-val">+ de 1.6M</span><span class="metric-desc">mensagens gerenciadas na plataforma Profluxus Talk</span></div>
+        <div class="metric-card"><span class="metric-val">100k+</span><span class="metric-desc">disparos estratégicos no WhatsApp Api Oficial</span></div>
+        <div class="metric-card"><span class="metric-val">19 anos</span><span class="metric-desc">de experiência em tecnologia & vendas</span></div>
+      </div>
+      <div class="speaker-tags">
+        <span class="tag">Meta API Oficial</span>
+        <span class="tag">WhatsApp Business</span>
+        <span class="tag">Automação</span>
+        <span class="tag">Parques Aquáticos</span>
+        <span class="tag">Profluxus Talk</span>
+        <span class="tag">Palestrante</span>
+        <span class="tag">SaaS</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONVIDADOS -->
+<section class="speakers-section" id="convidados">
+  <div class="section-inner">
+    <div class="section-label reveal">Quem vai te ensinar</div>
+    <h2 class="section-title reveal">Especialistas convidados do <em>dia 27</em></h2>
+    <div class="speakers-grid" id="speakersGrid">
+
+      <!-- GILSON 
+      <div class="speaker-card featured" data-index="0">
+        <div class="sc-mini-layout">
+          <div class="sc-mini-photo" id="miniPhotoGilson">⚙️</div>
+          <span class="sc-mini-name">Gilson Junio</span>
+          <span class="sc-mini-hint">▶</span>
+        </div>
+        <div class="sc-expanded-layout">
+          <div class="sc-photo-full">
+            <div class="sc-photo-placeholder" id="fullPhotoGilson">⚙️</div>
+          </div>
+          <div class="sc-info">
+            <span class="sc-badge">★ Speaker Principal</span>
+            <h3 class="speaker-card-name">Gilson Junio</h3>
+            <p class="speaker-card-title">Dev · Estrategista Comercial · Parceiro Meta</p>
+            <p class="speaker-card-bio">CEO do Grupo 3DS e desenvolvedor da Profluxus Talk — R$65M+ em VGV, 1.6M mensagens e parceiro oficial da Meta com API de WhatsApp, Facebook e Instagram.</p>
+            <ul class="speaker-learns">
+              <li>Como fazer disparos estratégicos sem restrições</li>
+              <li>Ferramentas dos grandes players do mercado</li>
+              <li>Máquina de vendas automatizada no WhatsApp</li>
+            </ul>
+          </div>
+        </div>
+      </div>-->
+    
+      <!-- RAGNER -->
+      <div class="speaker-card" data-index="1">
+        <div class="sc-mini-layout">
+          <div class="sc-mini-photo" id="miniPhotoRagner">🔥</div>
+          <span class="sc-mini-name">Ragner Antony</span>
+          <span class="sc-mini-hint">▶</span>
+        </div>
+        <div class="sc-expanded-layout">
+          <div class="sc-photo-full">
+            <div class="sc-photo-placeholder" id="fullPhotoRagner">🔥</div>
+          </div>
+          <div class="sc-info">
+            <span class="sc-badge">🎯 Neurovendas</span>
+            <h3 class="speaker-card-name">Ragner Antony</h3>
+            <p class="speaker-card-title">Estrategista de Tráfego Pago & Especialista em Neurovendas</p>
+            <a href="https://instagram.com/ragnerantonyestrategista" target="_blank" rel="noopener noreferrer" class="sc-instagram">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              @ragnerantonyestrategista
+            </a>
+            <br>
+            <p class="speaker-card-bio">10 anos de experiência e mais de R$25,5 milhões gerados para parceiros através de estratégias que unem neurociência e tráfego pago.</p>
+            <ul class="speaker-learns">
+              <li>Como criar ofertas que realmente convertem</li>
+              <li>Neurociência aplicada ao tráfego pago</li>
+              <li>Como preparar o cérebro do cliente para comprar</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+      <!-- ALESSANDRA -->
+      <div class="speaker-card" data-index="2">
+        <div class="sc-mini-layout">
+          <div class="sc-mini-photo" id="miniPhotoAlessandra">🧠</div>
+          <span class="sc-mini-name">Alessandra</span>
+          <span class="sc-mini-hint">▶</span>
+        </div>
+        <div class="sc-expanded-layout">
+          <div class="sc-photo-full">
+            <div class="sc-photo-placeholder" id="fullPhotoAlessandra">🧠</div>
+          </div>
+          <div class="sc-info">
+              <span class="sc-badge">🧠 Comportamento</span>
+              <h3 class="speaker-card-name">Alessandra Virgínia</h3>
+              <p class="speaker-card-title">Terapeuta · Análise Corporal · Comportamento Humano</p>
+              <a href="https://instagram.com/terapeuta_alessandravirginia" target="_blank" rel="noopener noreferrer" class="sc-instagram">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                  @terapeuta_alessandravirginia
+                </a>
+              <br>
+              <p class="speaker-card-bio">14 anos transformando pessoas e empresas através da análise corporal — mais de <strong style="color:var(--white)">600 vidas impactadas</strong> e atendimento a mais de <strong style="color:var(--white)">200 colaboradores</strong> em pequenas e médias empresas, ajudando cada um a descobrir seus pontos fortes e extrair seu máximo potencial.</p>
+              <ul class="speaker-learns">
+                  <li>Leia o corpo e o rosto: descubra o perfil de quem está na sua frente antes de abrir a boca</li>
+                  <li>Adapte sua linguagem em tempo real e elimine a resistência antes que ela apareça</li>
+                  <li>Venda com precisão — quando você fala a língua certa, o "sim" vem naturalmente</li>
+                </ul>
+            </div>
+        </div>
+      </div>
+    
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<div class="cta-inline reveal">
+  <div class="cta-inline-content">
+    <p class="cta-inline-text">3 especialistas. 1 método. Resultados comprovados.<br> Agora imagine aplicar isso no seu negócio...</p>
+    <a href="#" class="cta-inline-btn js-open-modal">🎯 Quero aprender o método</a>
+  </div>
+</div>
+
+<div class="section-divider"></div>
+
+<!-- O QUE VOCÊ VAI APRENDER -->
+<section class="learn-section">
+  <div class="section-inner">
+    <div class="section-label reveal">O que você vai aprender</div>
+    <h2 class="section-title reveal">Um método completo.<br><em>Resultado imediato.</em></h2>
+    <div class="learn-grid">
+      <div class="learn-card reveal"><span class="learn-number">01</span><div class="learn-icon">🧠</div><h3 class="learn-title">Neurociência Aplicada</h3><p class="learn-text">Como o cérebro humano se comporta durante um processo de vendas — e o que faz uma pessoa dizer "sim" para uma oferta.</p></div>
+      <div class="learn-card reveal reveal-delay-1"><span class="learn-number">02</span><div class="learn-icon">🎯</div><h3 class="learn-title">Preparação Mental</h3><p class="learn-text">Como preparar o cérebro do seu cliente para comprar antes mesmo de você apresentar a proposta.</p></div>
+      <div class="learn-card reveal reveal-delay-2"><span class="learn-number">03</span><div class="learn-icon">📊</div><h3 class="learn-title">Tráfego Estratégico</h3><p class="learn-text">Como usar tráfego pago de forma inteligente junto com neurociência para criar campanhas que realmente convertem.</p></div>
+      <div class="learn-card reveal reveal-delay-3"><span class="learn-number">04</span><div class="learn-icon">🤖</div><h3 class="learn-title">Máquina de Vendas</h3><p class="learn-text">Como estruturar um processo de vendas automatizado no WhatsApp — sem tomar bloqueios ou restrições.</p></div>
+    </div>
+    <div class="cta-inline reveal">
+      <div class="cta-inline-content">
+        <p class="cta-inline-text">Pronto para dominar essas 4 estratégias comprovadas?</p>
+        <a href="#" class="cta-inline-btn js-open-modal">🚀 Garantir minha vaga</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- MÉTODO ACOPEL -->
+<section class="acopel-section" id="metodo">
+  <div class="section-inner">
+    <div class="acopel-header">
+      <div class="section-label reveal" style="justify-content:center">Nosso método exclusivo</div>
+      <div class="method-badge reveal">◈ MÉTODO ACCoPeL</div>
+      <h2 class="section-title reveal" style="text-align:center">A base de toda <em>conexão</em><br>que gera conversão</h2>
+      <p class="reveal" style="font-size:16px; color:var(--muted); max-width:560px; margin:0 auto; font-weight:300; line-height:1.7;">O ACCoPeL é o framework que une psicologia comportamental, comunicação estratégica e tecnologia para transformar contatos em clientes fiéis.</p>
+    </div>
+    <div class="acopel-pillars">
+      <div class="pillar reveal"><div class="pillar-number">PILAR 01</div><div class="pillar-icon">🤝</div><div class="pillar-letter"><span>A</span></div><div class="pillar-name">Acolher</div><p class="pillar-desc">Criar um ambiente seguro e receptivo. Antes de vender, é preciso fazer o cliente sentir que está no lugar certo — com pessoas que entendem sua dor.</p><div class="pillar-connector"></div></div>
+      <div class="pillar reveal reveal-delay-1"><div class="pillar-number">PILAR 02</div><div class="pillar-icon">🔗</div><div class="pillar-letter"><span>C</span></div><div class="pillar-name">Conexão</div><p class="pillar-desc">Estabelecer um vínculo genuíno com o cliente. A conexão real ativa circuitos de confiança no cérebro — o primeiro passo neurológico para o "sim".</p><div class="pillar-connector"></div></div>
+      <div class="pillar reveal reveal-delay-2"><div class="pillar-number">PILAR 03</div><div class="pillar-icon">🧩</div><div class="pillar-letter"><span>Co</span></div><div class="pillar-name">Contextualização</div><p class="pillar-desc">Situar o cliente na realidade. Mostrar onde ele está, para onde pode ir e por que agir agora é a decisão mais inteligente.</p><div class="pillar-connector"></div></div>
+      <div class="pillar reveal reveal-delay-3"><div class="pillar-number">PILAR 04</div><div class="pillar-icon">💬</div><div class="pillar-letter"><span>PeL</span></div><div class="pillar-name">Pergunta Leve</div><p class="pillar-desc">A pergunta que não pressiona — ela convida. Abrir espaço para o cliente expressar o desejo de avançar com naturalidade e sem resistência.</p></div>
+    </div>
+    <div class="cta-inline reveal">
+      <div class="cta-inline-content">
+        <p class="cta-inline-text">Quer ver o ACCoPeL funcionando na prática? Venha para o evento!</p>
+        <a href="#" class="cta-inline-btn js-open-modal">📈 Aplicar o método</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- PARA QUEM É -->
+<section class="audience-section">
+  <div class="section-inner">
+    <div class="section-label reveal">Para quem é esse evento</div>
+    <h2 class="section-title reveal">Se você ainda não fatura<br><em>R$10k–R$20k</em> por mês…</h2>
+    <p class="reveal" style="font-size:16px; color:var(--muted); margin-bottom:8px; font-weight:300;">Você precisa estar nessa live. Este evento foi feito para quem:</p>
+    <div class="audience-grid">
+      <div class="audience-card reveal"><div class="audience-emoji">💼</div><div><h4 class="audience-card-title">Vendedores & Consultores</h4><p class="audience-card-text">Que já atuam no mercado mas não conseguem escalar resultados de forma consistente.</p></div></div>
+      <div class="audience-card reveal reveal-delay-1"><div class="audience-emoji">📱</div><div><h4 class="audience-card-title">Profissionais de WhatsApp</h4><p class="audience-card-text">Que fazem disparos mas não têm método — e acabam tomando bloqueios ou obtendo baixa conversão.</p></div></div>
+      <div class="audience-card reveal reveal-delay-2"><div class="audience-emoji">🚀</div><div><h4 class="audience-card-title">Empreendedores em Escala</h4><p class="audience-card-text">Que querem construir uma operação de vendas inteligente com tecnologia, automação e estratégia.</p></div></div>
+      <div class="audience-card reveal reveal-delay-3"><div class="audience-emoji">🧠</div><div><h4 class="audience-card-title">Curiosos por Comportamento</h4><p class="audience-card-text">Que querem entender como o cérebro humano funciona no processo de decisão de compra.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- CTA FINAL -->
+<section class="cta-section" id="inscricao">
+  <div class="cta-inner">
+    <div class="section-label reveal" style="justify-content:center">Última chamada</div>
+    <h2 class="cta-title reveal">Garanta seu acesso<br><em>agora. É gratuito.</em></h2>
+    <p class="cta-subtitle reveal">A live acontece no dia 27 de Março às 19h.<br>O acesso é exclusivo para membros do grupo.</p>
+    <div class="cta-warning reveal">⚡ Atenção: as informações serão enviadas somente no grupo!</div>
+    <a href="#" class="cta-btn reveal js-open-modal">🚀 Entrar no grupo agora</a>
+    <p class="cta-note reveal">🔒 100% gratuito · Sem spam · Saia quando quiser</p>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-logo" id="footerLogo">Profluxus Conexão</div>
+  <p class="footer-sub" id="footerSub">Evento online · 27 de março de 2025 às 19h· Gratuito</p>
+</footer>
+
+<a href="#" class="float-date js-open-modal" id="floatDate">🎟️ 27/MAR - 19h · GRATUITO</a>
+
+<script>
+/* ============================================================
+   INICIALIZAÇÃO DO CONFIG + MODAL TYPEBOT
+============================================================ */
+
+(function () {
+
+  /* ── Aplica variáveis CSS do CONFIG.cores ── */
+  if (CONFIG.cores) {
+    const root = document.documentElement.style;
+    const c = CONFIG.cores;
+    if (c.gold)       root.setProperty('--gold',  c.gold);
+    if (c.gold_light) root.setProperty('--gold-light', c.gold_light);
+    if (c.teal)       root.setProperty('--teal',  c.teal);
+    if (c.deep)       root.setProperty('--deep',  c.deep);
+    if (c.navy)       root.setProperty('--navy',  c.navy);
+    if (c.white)      root.setProperty('--white', c.white);
+  }
+
+  /* ── Aplica fontes ── */
+  if (CONFIG.fontes) {
+    const f = CONFIG.fontes;
+    document.querySelectorAll('.hero-title, .section-title, .speaker-name, .modal-question, .modal-confirm-title')
+      .forEach(el => el.style.fontFamily = f.titulo);
+    document.querySelectorAll('.nav-cta, .btn-primary, .cta-btn, .modal-next-btn, .modal-confirm-btn, .cta-inline-btn')
+      .forEach(el => el.style.fontFamily = f.botoes);
+    document.body.style.fontFamily = f.corpo;
+  }
+
+  /* ── Aplica textos do evento ── */
+  const ev = CONFIG.evento;
+  if (ev) {
+    const setText = (id, txt) => { const el = document.getElementById(id); if (el && txt) el.textContent = txt; };
+    setText('navLogo', ev.nome);
+    setText('footerLogo', ev.nome);
+    setText('navDate', `${ev.data} · ${ev.tipo}`);
+    setText('footerSub', `Evento online · ${ev.data} de ${ev.ano} · Gratuito`);
+    setText('floatDate', ev.badge_float);
+    setText('modalBrandName', ev.nome);
+  }
+
+  /* ── Aplica fotos ── */
+  document.addEventListener('DOMContentLoaded', function() {
+
+  /* ── Foto hero grande (seção Gilson destaque) ── */
+  function applyPhoto(imgSrc, placeholderId, altText) {
+    if (!imgSrc) return;
+    const placeholder = document.getElementById(placeholderId);
+    if (!placeholder) return;
+    placeholder.style.display = 'none';
+    const frame = placeholder.closest('.photo-frame') || placeholder.parentElement;
+    const img = document.createElement('img');
+    img.src = imgSrc;
+    img.alt = altText;
+    img.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top center;display:block;';
+    const badge = frame.querySelector('.photo-badge-float');
+    badge ? frame.insertBefore(img, badge) : frame.appendChild(img);
+  }
+
+  /* ── Foto grande dentro do card expandido ── */
+  function applyFullPhoto(imgSrc, placeholderId, altText) {
+    if (!imgSrc) return;
+    const ph = document.getElementById(placeholderId);
+    if (!ph) return;
+    const img = document.createElement('img');
+    img.src = imgSrc; img.alt = altText;
+    ph.replaceWith(img);
+  }
+
+  /* ── Foto mini circular (estado colapsado) ── */
+  function applyMiniPhoto(imgSrc, miniId) {
+    if (!imgSrc) return;
+    const mini = document.getElementById(miniId);
+    if (!mini) return;
+    mini.textContent = '';
+    const img = document.createElement('img');
+    img.src = imgSrc;
+    img.style.cssText = 'width:100%;height:100%;object-fit:cover;object-position:top center;border-radius:50%;display:block;';
+    mini.appendChild(img);
+  }
+
+  /* ── Aplica todas as fotos ── */
+  applyPhoto(CONFIG.fotos.gilson, 'photoGilsonWrap', 'Foto Gilson Junio');
+
+  applyFullPhoto(CONFIG.fotos.gilson,     'fullPhotoGilson',     'Gilson Junio');
+  applyFullPhoto(CONFIG.fotos.ragner,     'fullPhotoRagner',     'Ragner Antony');
+  applyFullPhoto(CONFIG.fotos.alessandra, 'fullPhotoAlessandra', 'Alessandra');
+
+  applyMiniPhoto(CONFIG.fotos.gilson,     'miniPhotoGilson');
+  applyMiniPhoto(CONFIG.fotos.ragner,     'miniPhotoRagner');
+  applyMiniPhoto(CONFIG.fotos.alessandra, 'miniPhotoAlessandra');
+
+  /* ── Expand on hover/click ── */
+  const grid  = document.getElementById('speakersGrid');
+  const cards = grid ? [...grid.querySelectorAll('.speaker-card')] : [];
+
+  function expandCard(card) {
+    cards.forEach(c => c.classList.remove('expanded'));
+    card.classList.add('expanded');
+    grid.classList.add('has-expanded');
+  }
+
+  cards.forEach(card => {
+    card.addEventListener('mouseenter', () => expandCard(card));
+    card.addEventListener('click',      () => expandCard(card));
+  });
+
+  // Primeiro card expandido por padrão
+  if (cards.length) expandCard(cards[0]);
+
+  /* ── Auto-rotate quando mouse não está no grid ── */
+  let autoIndex = 0;
+  let autoTimer = null;
+  let mouseOnGrid = false;
+
+  function startAutoRotate() {
+    autoTimer = setInterval(() => {
+      if (mouseOnGrid) return;
+      autoIndex = (autoIndex + 1) % cards.length;
+      expandCard(cards[autoIndex]);
+    }, 3500); // ← intervalo em ms (3.5s)
+  }
+
+  grid.addEventListener('mouseenter', () => { mouseOnGrid = true; });
+  grid.addEventListener('mouseleave', () => {
+    mouseOnGrid = false;
+    // Sincroniza o índice com o card atualmente expandido
+    autoIndex = cards.findIndex(c => c.classList.contains('expanded'));
+  });
+
+  startAutoRotate();
+  
+});
+
+  /* ============================================================
+     MODAL — ENGINE ACCoPeL
+     Suporta: multi (vários campos), radio (emoji cards), confirm
+  ============================================================ */
+  const overlay  = document.getElementById('modalOverlay');
+  const modalBody= document.getElementById('modalBody');
+  const progress = document.getElementById('modalProgressFill');
+  const progLbl  = document.getElementById('modalProgressLabel');
+  const closeBtn = document.getElementById('modalClose');
+  const steps    = CONFIG.modal.steps;
+
+  let currentStep = 0;
+  const leadData  = {};
+
+  /* ── helpers ─────────────────────────────── */
+  function interpolate(str) {
+    return (str || '').replace(/\{(\w+)\}/g, (_, k) => leadData[k] || '');
+  }
+
+  function openModal() {
+    currentStep = 0;
+    Object.keys(leadData).forEach(k => delete leadData[k]);
+    renderStep(0);
+    overlay.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal() {
+    overlay.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  /* ── progress ────────────────────────────── */
+  function updateProgress(idx) {
+    const inputSteps = steps.filter(s => s.tipo !== 'confirm');
+    const total = inputSteps.length;
+    if (steps[idx] && steps[idx].tipo === 'confirm') {
+      progress.style.width = '100%';
+      progLbl.textContent = 'Concluído! 🎉';
+      return;
+    }
+    const pct = total ? Math.round((idx / total) * 100) : 0;
+    progress.style.width = pct + '%';
+    progLbl.textContent = `${idx + 1} de ${total}`;
+  }
+
+  /* ── renderStep dispatcher ───────────────── */
+  function renderStep(idx) {
+    const step = steps[idx];
+    updateProgress(idx);
+    modalBody.innerHTML = '';
+
+    if (step.tipo === 'confirm') { renderConfirm(step); return; }
+    if (step.tipo === 'radio')   { renderRadio(step);   return; }
+    if (step.tipo === 'multi')   { renderMulti(step);   return; }
+  }
+
+  /* ── Cabeçalho padrão ────────────────────── */
+  function makeHeader(step, wrap) {
+    if (step.icone) {
+      const ico = document.createElement('div');
+      ico.className = 'ms-icon';
+      ico.textContent = step.icone;
+      wrap.appendChild(ico);
+    }
+    const q = document.createElement('div');
+    q.className = 'modal-question';
+    q.innerHTML = interpolate(step.pergunta);
+    wrap.appendChild(q);
+    if (step.subtitulo) {
+      const sub = document.createElement('div');
+      sub.className = 'modal-question-desc';
+      sub.textContent = step.subtitulo;
+      wrap.appendChild(sub);
+    }
+  }
+
+  /* ── RADIO com emoji cards ───────────────── */
+  function renderRadio(step) {
+    const wrap = document.createElement('div');
+    wrap.className = 'modal-step active';
+    makeHeader(step, wrap);
+
+    const grid = document.createElement('div');
+    grid.className = 'modal-radio-grid';
+
+    step.options.forEach(opt => {
+      const isObj = typeof opt === 'object';
+      const label = isObj ? opt.label : opt;
+      const value = isObj ? opt.value : opt;
+      const emoji = isObj ? opt.emoji : null;
+
+      const card = document.createElement('div');
+      card.className = 'modal-radio-option';
+      card.innerHTML = emoji
+        ? `<span class="ro-emoji">${emoji}</span><span class="ro-label">${label}</span><span class="ro-check">✓</span>`
+        : `<div class="modal-radio-dot"></div><span class="ro-label">${label}</span><span class="ro-check">✓</span>`;
+
+      card.addEventListener('click', () => {
+        grid.querySelectorAll('.modal-radio-option').forEach(c => c.classList.remove('selected'));
+        card.classList.add('selected');
+        leadData[step.key] = value;
+        setTimeout(() => nextStep(), 320);
+      });
+      grid.appendChild(card);
+    });
+
+    wrap.appendChild(grid);
+    modalBody.appendChild(wrap);
+  }
+
+  /* ── MULTI — vários campos numa tela ────── */
+  function renderMulti(step) {
+    const wrap = document.createElement('div');
+    wrap.className = 'modal-step active';
+    makeHeader(step, wrap);
+
+    const fieldsWrap = document.createElement('div');
+    fieldsWrap.className = 'ms-fields';
+
+    const errGlobal = document.createElement('div');
+    errGlobal.className = 'modal-error';
+    errGlobal.id = 'modalError';
+    errGlobal.textContent = 'Preencha os campos obrigatórios para continuar.';
+
+    step.campos.forEach(campo => {
+      const group = document.createElement('div');
+      group.className = 'ms-field-group';
+
+      const lbl = document.createElement('label');
+      lbl.className = 'ms-label';
+      lbl.textContent = campo.label + (campo.obrigatorio ? ' *' : '');
+      group.appendChild(lbl);
+
+      let el;
+
+      if (campo.input === 'select') {
+        el = document.createElement('select');
+        el.className = 'modal-input modal-select';
+        const placeholder = document.createElement('option');
+        placeholder.value = '';
+        placeholder.textContent = 'Selecione...';
+        placeholder.disabled = true;
+        placeholder.selected = true;
+        el.appendChild(placeholder);
+        campo.options.forEach(opt => {
+          const o = document.createElement('option');
+          const isObj = typeof opt === 'object';
+          o.value = isObj ? opt.value : opt;
+          o.textContent = isObj ? opt.label : opt;
+          if (leadData[campo.key] === o.value) o.selected = true;
+          el.appendChild(o);
+        });
+        el.addEventListener('change', () => {
+          leadData[campo.key] = el.value;
+          errGlobal.classList.remove('show');
+        });
+
+      } else {
+        el = document.createElement('input');
+        el.className = 'modal-input';
+        el.type = campo.input === 'email' ? 'email'
+                : campo.input === 'phone' ? 'tel'
+                : 'text';
+        el.placeholder = campo.placeholder || '';
+        el.autocomplete = campo.input === 'email' ? 'email'
+                        : campo.input === 'phone' ? 'tel'
+                        : 'given-name';
+        if (leadData[campo.key]) el.value = leadData[campo.key];
+        el.addEventListener('input', () => {
+          leadData[campo.key] = el.value.trim();
+          errGlobal.classList.remove('show');
+        });
+        el.addEventListener('keydown', e => { if (e.key === 'Enter') nextStep(); });
+      }
+
+      group.appendChild(el);
+      fieldsWrap.appendChild(group);
+    });
+
+    wrap.appendChild(fieldsWrap);
+    wrap.appendChild(errGlobal);
+
+    const btn = document.createElement('button');
+    btn.className = 'modal-next-btn';
+    btn.textContent = CONFIG.modal.btn_proximo;
+    btn.addEventListener('click', nextStep);
+    wrap.appendChild(btn);
+
+    modalBody.appendChild(wrap);
+
+    // Foca no primeiro input de texto
+    const firstInput = wrap.querySelector('input');
+    if (firstInput) setTimeout(() => firstInput.focus(), 100);
+  }
+
+  /* ── CONFIRM ─────────────────────────────── */
+  function renderConfirm(step) {
+    progress.style.width = '100%';
+    progLbl.textContent = 'Concluído! 🎉';
+
+    modalBody.innerHTML = `
+      <div class="modal-step active modal-confirm">
+        <div class="modal-confirm-icon">🔥</div>
+        <div class="modal-confirm-title">${interpolate(step.pergunta)}</div>
+        <p class="modal-confirm-desc">${interpolate(step.descricao)}</p>
+        <a href="${CONFIG.links.grupo_whatsapp || '#'}" target="_blank" rel="noopener noreferrer" class="modal-confirm-btn">
+          ${CONFIG.modal.btn_entrar}
+        </a>
+      </div>
+    `;
+  }
+
+  /* ── nextStep com validação ──────────────── */
+  function nextStep() {
+    const step = steps[currentStep];
+    const err  = document.getElementById('modalError');
+
+    // Valida campos obrigatórios do step atual
+    if (step.tipo === 'multi') {
+      const obrigatorios = step.campos.filter(c => c.obrigatorio);
+      const faltando = obrigatorios.some(c => !leadData[c.key] || String(leadData[c.key]).trim() === '');
+      if (faltando) {
+        if (err) err.classList.add('show');
+        return;
+      }
+    }
+
+    if (step.tipo === 'radio' && step.obrigatorio) {
+      if (!leadData[step.key]) {
+        if (err) err.classList.add('show');
+        return;
+      }
+    }
+
+    currentStep++;
+    if (currentStep >= steps.length) {
+      const confirmStep = steps.find(s => s.tipo === 'confirm');
+      renderConfirm(confirmStep || { pergunta: 'Obrigado!', descricao: '' });
+      sendWebhook();
+      return;
+    }
+    renderStep(currentStep);
+  }
+
+  /* ── Webhook ─────────────────────────────── */
+  async function sendWebhook() {
+    const url = CONFIG.modal.webhook_url;
+    if (!url) return;
+    try {
+      await fetch(url, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          ...leadData,
+          evento: CONFIG.evento.nome,
+          data_inscricao: new Date().toISOString(),
+        }),
+      });
+    } catch (e) {
+      console.warn('[Profluxus Modal] Webhook falhou:', e);
+    }
+  }
+
+  /* ── Bind eventos ── */
+  closeBtn.addEventListener('click', closeModal);
+  overlay.addEventListener('click', (e) => { if (e.target === overlay) closeModal(); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
+  document.querySelectorAll('.js-open-modal').forEach(el => {
+    el.addEventListener('click', (e) => { e.preventDefault(); openModal(); });
+  });
+
+  /* ── Scroll reveal ── */
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
+    });
+  }, { threshold: 0.1 });
+  reveals.forEach(r => observer.observe(r));
+
+})();
+</script>
+</body>
+</html>
